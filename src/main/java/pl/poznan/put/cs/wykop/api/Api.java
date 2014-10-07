@@ -18,18 +18,18 @@ public class Api {
 	}
 
 	public String getLinksCommentsString(int i) throws ConnectionException {
-		return this.getResponse("link/comments", "" + i);
+		return this.getJsonResponse("link/comments", "" + i);
 	}
 
 	public String getLinkString(int i) throws ConnectionException {
-		return this.getResponse("link/index", "" + i);
+		return this.getJsonResponse("link/index", "" + i);
 	}
 
 	public String getProfileString(String username) throws ConnectionException {
-		return this.getResponse("profile/index", username);
+		return this.getJsonResponse("profile/index", username);
 	}
 
-	private String getResponse(String method, String param) throws ConnectionException {
+	public String getJsonResponse(String method, String param) throws ConnectionException {
 		return this.conn.call(method, param);
 	}
 
