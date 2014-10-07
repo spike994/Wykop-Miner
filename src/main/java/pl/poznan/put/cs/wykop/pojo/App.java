@@ -6,11 +6,10 @@ import java.util.Properties;
 
 import pl.poznan.put.cs.wykop.api.Api;
 import pl.poznan.put.cs.wykop.connection.ConnectionException;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
+import pl.poznan.put.cs.wykop.json.JsonException;
 
 public class App {
-	public static void main(String[] args) throws IOException, ConnectionException {
+	public static void main(String[] args) throws IOException, ConnectionException, JsonException {
 		Properties prop = new Properties();
 		InputStream propStream = ClassLoader.getSystemResourceAsStream("wykop.properties");
 		prop.load(propStream);
@@ -25,11 +24,7 @@ public class App {
 		Api api = new Api(appkey, secret);
 		api.setHourLimit(h);
 
-		String json = api.getEntryString(9727380);
-
-		ObjectMapper mapper = new ObjectMapper();
-		Entry e = mapper.readValue(json, Entry.class);
-
+		Entry e = api.getEntryString(9727380);
 		System.out.println(e);
 	}
 }

@@ -2,6 +2,9 @@ package pl.poznan.put.cs.wykop.api;
 
 import pl.poznan.put.cs.wykop.connection.Connection;
 import pl.poznan.put.cs.wykop.connection.ConnectionException;
+import pl.poznan.put.cs.wykop.json.JSON;
+import pl.poznan.put.cs.wykop.json.JsonException;
+import pl.poznan.put.cs.wykop.pojo.Entry;
 
 public class Api {
 	private Connection conn;
@@ -10,8 +13,8 @@ public class Api {
 		this.conn = new Connection(appKey, secret);
 	}
 
-	public String getEntryString(int i) throws ConnectionException {
-		return this.getResponse("entries/index", "" + i);
+	public Entry getEntryString(int i) throws ConnectionException, JsonException {
+		return this.getObject("entries/index", "" + i, Entry.class);
 	}
 
 	public String getLinksCommentsString(int i) throws ConnectionException {
@@ -28,6 +31,11 @@ public class Api {
 
 	private String getResponse(String method, String param) throws ConnectionException {
 		return this.conn.call(method, param);
+	}
+
+	private <T> T getObject(String method, String param, Class<T> clazz) throws ConnectionException, JsonException {
+		String json = this.conn.call(method, param);
+		return JSON.parse(json, clazz);
 	}
 
 	public void setHourLimit(int noOfRequest) {

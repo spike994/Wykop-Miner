@@ -10,6 +10,8 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import pl.poznan.put.cs.wykop.json.JSON;
+
 public class Connection {
 	private static String REST_OF_PARAMS = ",output,clear";
 	private static String URL_BASE = "http://a.wykop.pl/";
@@ -53,7 +55,8 @@ public class Connection {
 			}
 			String res = IOUtils.toString(resp.getEntity().getContent(), "utf-8");
 			if (res.startsWith("{\"error\":{\"code\":")) {
-				throw new WykopException(res);
+				String msg = JSON.readErrorMsg(res);
+				throw new WykopException(msg);
 			} else {
 				return res;
 			}
@@ -81,7 +84,7 @@ public class Connection {
 	}
 
 	private String sign(String url) {
-		return DigestUtils.md5Hex(this.secret+url);
+		return DigestUtils.md5Hex(this.secret + url);
 	}
 
 	public void setAppKey(String appKey) {
