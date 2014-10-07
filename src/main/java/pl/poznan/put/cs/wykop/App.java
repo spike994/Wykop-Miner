@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.wykop.pojo;
+package pl.poznan.put.cs.wykop;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,6 +7,7 @@ import java.util.Properties;
 import pl.poznan.put.cs.wykop.api.Api;
 import pl.poznan.put.cs.wykop.connection.ConnectionException;
 import pl.poznan.put.cs.wykop.json.JsonException;
+import pl.poznan.put.cs.wykop.model.Entry;
 
 public class App {
 	public static void main(String[] args) throws IOException, ConnectionException, JsonException {

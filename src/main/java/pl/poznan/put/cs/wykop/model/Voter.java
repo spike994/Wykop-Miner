@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.wykop.pojo;
+package pl.poznan.put.cs.wykop.model;
 
 import java.util.Date;
 

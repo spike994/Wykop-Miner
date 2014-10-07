@@ -3,7 +3,7 @@ package pl.poznan.put.cs.wykop;
 import pl.poznan.put.cs.wykop.api.Api;
 import pl.poznan.put.cs.wykop.connection.ConnectionException;
 import pl.poznan.put.cs.wykop.json.JsonException;
-import pl.poznan.put.cs.wykop.pojo.Entry;
+import pl.poznan.put.cs.wykop.model.Entry;
 
 public class ConnectionTest {
 	public static void main(String[] args) throws ConnectionException, JsonException {

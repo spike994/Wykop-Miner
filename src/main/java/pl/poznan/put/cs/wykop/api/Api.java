@@ -4,7 +4,7 @@ import pl.poznan.put.cs.wykop.connection.Connection;
 import pl.poznan.put.cs.wykop.connection.ConnectionException;
 import pl.poznan.put.cs.wykop.json.JSON;
 import pl.poznan.put.cs.wykop.json.JsonException;
-import pl.poznan.put.cs.wykop.pojo.Entry;
+import pl.poznan.put.cs.wykop.model.Entry;
 
 public class Api {
 	private Connection conn;
