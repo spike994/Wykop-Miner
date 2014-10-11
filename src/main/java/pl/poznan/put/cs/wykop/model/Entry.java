@@ -1,182 +1,199 @@
 package pl.poznan.put.cs.wykop.model;
 
-import java.util.Date;
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonIgnoreProperties({ "author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo", "author_group", "author_sex", "receiver_avatar", "receiver_avatar_big", "receiver_avatar_med",
-		"receiver_avatar_lo", "receiver_group", "receiver_sex", "user_vote", "user_favorite", "violation_url", "can_comment" })
+import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
+
+@Entity
+@Table(name = "entry")
+@JsonIgnoreProperties({"author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo", "author_group", "author_sex", "receiver_avatar", "receiver_avatar_big", "receiver_avatar_med",
+        "receiver_avatar_lo", "receiver_group", "receiver_sex", "user_vote", "user_favorite", "violation_url", "can_comment"})
 public class Entry {
-	private String app;
-	private String author;
-	private boolean blocked;
-	private String body;
-	private int commentCount;
-	private List<EntryComment> comments;
-	private Date date;
-	private boolean deleted;
-	private Embed embed;
+    @Column(name = "app")
+    private String app;
+    @Column(name = "author")
+    private String author;
+    @Transient
+    @Column(name = "blocked")
+    private boolean blocked;
+    @Column(name = "content")
+    private String body;
+    @Column(name = "comment_count")
+    private int commentCount;
+    @Transient
+    private List<EntryComment> comments;
+    @Column(name = "date")
+    private Date date;
+    @Transient
+    @Column(name = "deleted")
+    private boolean deleted;
+    @Column(name = "embed")
+    @Transient
+    private Embed embed;
+    @Id
+    @Column(name = "id")
+    private long id;
+    @Column(name = "receiver")
+    private String receiver;
+    @Column(name = "source")
+    private String source;
+    @Column(name = "type")
+    private String type;
+    @Column(name = "url")
+    private String url;
+    @Column(name = "votes")
+    private int voteCount;
+    @Transient
+    private List<Voter> voters;
 
-	public Embed getEmbed() {
-		return embed;
-	}
+    public String getApp() {
+        return app;
+    }
 
-	@JsonProperty("embed")
-	public void setEmbed(Embed embed) {
-		this.embed = embed;
-	}
+    @JsonProperty("app")
+    public void setApp(String app) {
+        this.app = app;
+    }
 
-	private long id;
-	private String receiver;
-	private String source;
-	private String type;
-	private String url;
-	private int voteCount;
-	private List<Voter> voters;
+    public void setEmbed(Embed embed) {
+        this.embed = embed;
+    }
 
-	public String getApp() {
-		return app;
-	}
+    public String getAuthor() {
+        return author;
+    }
 
-	public String getAuthor() {
-		return author;
-	}
+    @JsonProperty("author")
+    public void setAuthor(String author) {
+        this.author = author;
+    }
 
-	public String getBody() {
-		return body;
-	}
+    public String getBody() {
+        return body;
+    }
 
-	public int getCommentCount() {
-		return commentCount;
-	}
+    @JsonProperty("body")
+    public void setBody(String body) {
+        this.body = body;
+    }
 
-	public List<EntryComment> getComments() {
-		return comments;
-	}
+    public int getCommentCount() {
+        return commentCount;
+    }
 
-	public Date getDate() {
-		return date;
-	}
+    @JsonProperty("comment_count")
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
+    }
 
-	public long getId() {
-		return id;
-	}
+    public List<EntryComment> getComments() {
+        return comments;
+    }
 
-	public String getReceiver() {
-		return receiver;
-	}
+    @JsonProperty("comments")
+    public void setComments(List<EntryComment> comments) {
+        this.comments = comments;
+    }
 
-	public String getSource() {
-		return source;
-	}
+    public Date getDate() {
+        return date;
+    }
 
-	public String getType() {
-		return type;
-	}
+    @JsonProperty("date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "CET")
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
-	public String getUrl() {
-		return url;
-	}
+    public long getId() {
+        return id;
+    }
 
-	public int getVoteCount() {
-		return voteCount;
-	}
+    @JsonProperty("id")
+    public void setId(long id) {
+        this.id = id;
+    }
 
-	public List<Voter> getVoters() {
-		return voters;
-	}
+    public String getReceiver() {
+        return receiver;
+    }
 
-	public boolean isBlocked() {
-		return blocked;
-	}
+    @JsonProperty("receiver")
+    public void setReceiver(String receiver) {
+        this.receiver = receiver;
+    }
 
-	public boolean isDeleted() {
-		return deleted;
-	}
+    public String getSource() {
+        return source;
+    }
 
-	@JsonProperty("app")
-	public void setApp(String app) {
-		this.app = app;
-	}
+    @JsonProperty("source")
+    public void setSource(String source) {
+        this.source = source;
+    }
 
-	@JsonProperty("author")
-	public void setAuthor(String author) {
-		this.author = author;
-	}
+    public String getType() {
+        return type;
+    }
 
-	@JsonProperty("blocked")
-	public void setBlocked(boolean blocked) {
-		this.blocked = blocked;
-	}
+    @JsonProperty("type")
+    public void setType(String type) {
+        this.type = type;
+    }
 
-	@JsonProperty("body")
-	public void setBody(String body) {
-		this.body = body;
-	}
+    public String getUrl() {
+        return url;
+    }
 
-	@JsonProperty("comment_count")
-	public void setCommentCount(int commentCount) {
-		this.commentCount = commentCount;
-	}
+    @JsonProperty("url")
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
-	@JsonProperty("comments")
-	public void setComments(List<EntryComment> comments) {
-		this.comments = comments;
-	}
+    public int getVoteCount() {
+        return voteCount;
+    }
 
-	@JsonProperty("date")
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "CET")
-	public void setDate(Date date) {
-		this.date = date;
-	}
+    @JsonProperty("vote_count")
+    public void setVoteCount(int voteCount) {
+        this.voteCount = voteCount;
+    }
 
-	@JsonProperty("deleted")
-	public void setDeleted(boolean deleted) {
-		this.deleted = deleted;
-	}
+    public List<Voter> getVoters() {
+        return voters;
+    }
 
-	@JsonProperty("id")
-	public void setId(long id) {
-		this.id = id;
-	}
+    @JsonProperty("voters")
+    public void setVoters(List<Voter> voters) {
+        this.voters = voters;
+    }
 
-	@JsonProperty("receiver")
-	public void setReceiver(String receiver) {
-		this.receiver = receiver;
-	}
+    public boolean isBlocked() {
+        return blocked;
+    }
 
-	@JsonProperty("source")
-	public void setSource(String source) {
-		this.source = source;
-	}
+    @JsonProperty("blocked")
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
+    }
 
-	@JsonProperty("type")
-	public void setType(String type) {
-		this.type = type;
-	}
+    public boolean isDeleted() {
+        return deleted;
+    }
 
-	@JsonProperty("url")
-	public void setUrl(String url) {
-		this.url = url;
-	}
+    @JsonProperty("deleted")
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
 
-	@JsonProperty("vote_count")
-	public void setVoteCount(int voteCount) {
-		this.voteCount = voteCount;
-	}
-
-	@JsonProperty("voters")
-	public void setVoters(List<Voter> voters) {
-		this.voters = voters;
-	}
-
-	@Override
-	public String toString() {
-		return "Entry [app=" + app + ", author=" + author + ", blocked=" + blocked + ", body=" + body + ", commentCount=" + commentCount + ", comments=" + comments + ", date=" + date + ", deleted="
-				+ deleted + ", embed=" + embed + ", id=" + id + ", receiver=" + receiver + ", source=" + source + ", type=" + type + ", url=" + url + ", voteCount=" + voteCount + ", voters=" + voters
-				+ "]";
-	}
+    @Override
+    public String toString() {
+        return "Entry [app=" + app + ", author=" + author + ", blocked=" + blocked + ", body=" + body + ", commentCount=" + commentCount + ", comments=" + comments + ", date=" + date + ", deleted="
+                + deleted + ", embed=" + embed + ", id=" + id + ", receiver=" + receiver + ", source=" + source + ", type=" + type + ", url=" + url + ", voteCount=" + voteCount + ", voters=" + voters
+                + "]";
+    }
 }
