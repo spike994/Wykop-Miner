@@ -1,27 +1,53 @@
 package pl.poznan.put.cs.wykop.model;
 
-import java.util.Date;
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
+@Entity
+@Table(name = "entry_comment")
 @JsonIgnoreProperties({ "author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo", "author_group", "author_sex", "user_vote", "violation_url" })
-public class EntryComment {
-	private String app;
-	private String author;
-	private boolean blocked;
-	private String body;
-	private Date date;
-	private boolean deleted;
-	private Embed embed;
-	private long entryId;
-	private long id;
-	private String source;
-	private String type;
-	private int voteCount;
-	private List<Voter> voters;
+public class EntryComment{
+    @Column(name = "vote_count")
+    private long voteCount;
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private Entry entry;
+    @Transient
+    @Column(name = "entry_id")
+    private long entryId;
+    @Column(name = "app")
+    private String app;
+    @Column(name = "author")
+    private String author;
+    @Transient
+    @Column(name = "blocked")
+    private boolean blocked;
+    @Column(name = "content")
+    private String body;
+    @Column(name = "date")
+    private Date date;
+    @Transient
+    @Column(name = "deleted")
+    private boolean deleted;
+    @Transient
+    private Embed embed;
+    @Id
+    @Column(name = "id")
+    private long id;
+    @Column(name = "receiver")
+    private String receiver;
+    @Column(name = "source")
+    private String source;
+    @Column(name = "type")
+    private String type;
+    @Column(name = "url")
+    private String url;
+    @Transient
+    private List<Voter> voters;
 
 	public String getApp() {
 		return app;
@@ -59,7 +85,7 @@ public class EntryComment {
 		return type;
 	}
 
-	public int getVoteCount() {
+	public long getVoteCount() {
 		return voteCount;
 	}
 
@@ -70,6 +96,14 @@ public class EntryComment {
 	public boolean isBlocked() {
 		return blocked;
 	}
+
+    public Entry getEntry() {
+        return entry;
+    }
+
+    public void setEntry(Entry entry) {
+        this.entry = entry;
+    }
 
 	public boolean isDeleted() {
 		return deleted;

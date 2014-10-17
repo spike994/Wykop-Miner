@@ -2,27 +2,27 @@ package pl.poznan.put.cs.wykop.service;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import pl.poznan.put.cs.wykop.model.Entry;
+import pl.poznan.put.cs.wykop.model.EntryComment;
 import pl.poznan.put.cs.wykop.util.HibernateUtil;
 
 /**
- * Created by Dawid on 2014-10-09.
+ * Created by dk994 on 16.10.14.
  */
-public class EntryService {
-    public static Entry save(Entry entry) {
+public class EntryCommentService {
+    public static EntryComment save(EntryComment entryComment) {
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
 
         session.beginTransaction();
 
-        Long id = (Long) session.save(entry);
-        entry.setId(id);
+        Long id = (Long) session.save(entryComment);
+        entryComment.setId(id);
 
         session.getTransaction().commit();
 
         session.close();
 
-        return entry;
+        return entryComment;
     }
 
 }

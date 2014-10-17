@@ -23,15 +23,15 @@ public class Entry {
     @Column(name = "content")
     private String body;
     @Column(name = "comment_count")
-    private int commentCount;
-    @Transient
+    private long commentCount;
+    @OneToMany(mappedBy = "entry")
     private List<EntryComment> comments;
     @Column(name = "date")
     private Date date;
     @Transient
     @Column(name = "deleted")
     private boolean deleted;
-    @Column(name = "embed")
+//    @Column(name = "embed")
     @Transient
     private Embed embed;
     @Id
@@ -46,7 +46,7 @@ public class Entry {
     @Column(name = "url")
     private String url;
     @Column(name = "votes")
-    private int voteCount;
+    private long voteCount;
     @Transient
     private List<Voter> voters;
 
@@ -81,7 +81,7 @@ public class Entry {
         this.body = body;
     }
 
-    public int getCommentCount() {
+    public long getCommentCount() {
         return commentCount;
     }
 
@@ -154,7 +154,7 @@ public class Entry {
         this.url = url;
     }
 
-    public int getVoteCount() {
+    public long getVoteCount() {
         return voteCount;
     }
 
