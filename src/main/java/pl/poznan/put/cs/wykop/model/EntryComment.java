@@ -14,9 +14,8 @@ public class EntryComment{
     @Column(name = "vote_count")
     private long voteCount;
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
     private Entry entry;
-    @Transient
     @Column(name = "entry_id")
     private long entryId;
     @Column(name = "app")
