@@ -3,8 +3,12 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Date;
 import java.util.List;
 
@@ -25,6 +29,7 @@ public class Entry {
     @Column(name = "comment_count")
     private long commentCount;
     @OneToMany(mappedBy = "entry")
+    @Cascade(CascadeType.SAVE_UPDATE)
     private List<EntryComment> comments;
     @Column(name = "date")
     private Date date;
@@ -49,6 +54,8 @@ public class Entry {
     private long voteCount;
     @Transient
     private List<Voter> voters;
+    @ManyToMany(mappedBy = "entry")
+    private List<Tag> tags;
 
     public String getApp() {
         return app;
@@ -189,6 +196,17 @@ public class Entry {
     public void setDeleted(boolean deleted) {
         this.deleted = deleted;
     }
+
+//
+//    public List<Tag> getEntryTags() {
+//        return entryTags;
+//    }
+//
+//    public void setEntryTags(List<Tag> entryTags) {
+//        this.entryTags = entryTags;
+//    }
+    @Transient
+    private List<Tag> entryTags;
 
     @Override
     public String toString() {

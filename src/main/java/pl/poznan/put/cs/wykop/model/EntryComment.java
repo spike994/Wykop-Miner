@@ -7,6 +7,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
+import java.util.regex.Pattern;
+
 @Entity
 @Table(name = "entry_comment")
 @JsonIgnoreProperties({ "author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo", "author_group", "author_sex", "user_vote", "violation_url" })
@@ -47,6 +49,7 @@ public class EntryComment{
     private String url;
     @Transient
     private List<Voter> voters;
+
 
 	public String getApp() {
 		return app;
