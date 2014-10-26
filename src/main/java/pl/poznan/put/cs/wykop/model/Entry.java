@@ -3,8 +3,8 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.hibernate.annotations.*;
-import org.hibernate.annotations.CascadeType;
+
+import javax.persistence.CascadeType;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
@@ -28,8 +28,7 @@ public class Entry {
     private String body;
     @Column(name = "comment_count")
     private long commentCount;
-    @OneToMany(mappedBy = "entry")
-    @Cascade(CascadeType.SAVE_UPDATE)
+    @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
     private List<EntryComment> comments;
     @Column(name = "date")
     private Date date;
@@ -54,8 +53,12 @@ public class Entry {
     private long voteCount;
     @Transient
     private List<Voter> voters;
-    @ManyToMany(mappedBy = "entry")
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="entry_tag",
+            joinColumns={@JoinColumn(name="entry_id")},
+            inverseJoinColumns={@JoinColumn(name="tag_id")})
     private List<Tag> tags;
+
 
     public String getApp() {
         return app;
@@ -197,16 +200,7 @@ public class Entry {
         this.deleted = deleted;
     }
 
-//
-//    public List<Tag> getEntryTags() {
-//        return entryTags;
-//    }
-//
-//    public void setEntryTags(List<Tag> entryTags) {
-//        this.entryTags = entryTags;
-//    }
-    @Transient
-    private List<Tag> entryTags;
+
 
     @Override
     public String toString() {

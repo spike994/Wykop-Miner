@@ -1,9 +1,12 @@
 package pl.poznan.put.cs.wykop.model;
 
-import javax.persistence.Column;
+import org.hibernate.annotations.*;
+
+import javax.persistence.*;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.persistence.Transient;
+import java.util.List;
 
 /**
  * Created by dk994 on 21.10.14.
@@ -11,14 +14,16 @@ import javax.persistence.Transient;
 @Entity
 @Table(name = "tag")
 public class Tag {
-    Entry entry;
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private int id;
     @Column(name = "name")
     private String name;
     @Column(name = "entry_id")
     private long entryId;
-    @Transient
-    @Column(name = "link_id")
-    private long linkId;
+    @ManyToMany(mappedBy = "id")
+    private List<Entry> entries;
 
     public String getName() {
         return name;
@@ -36,11 +41,20 @@ public class Tag {
         this.entryId = entryId;
     }
 
-    public long getLinkId() {
-        return linkId;
+    public List<Entry> getEntries() {
+        return entries;
     }
 
-    public void setLinkId(long linkId) {
-        this.linkId = linkId;
+    public void setEntries(List<Entry> entries) {
+        this.entries = entries;
+    }
+
+    public int getId() {
+
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

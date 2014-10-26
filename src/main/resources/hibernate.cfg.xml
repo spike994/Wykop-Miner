@@ -28,10 +28,11 @@
         <property name="show_sql">false</property>
 
 
-        <property name="hbm2ddl.auto">validate</property>
+        <property name="hbm2ddl.auto">update</property>
 
         <mapping class="pl.poznan.put.cs.wykop.model.Entry"/>
         <mapping class="pl.poznan.put.cs.wykop.model.EntryComment"/>
+        <mapping class="pl.poznan.put.cs.wykop.model.Tag"/>
 
 
     </session-factory>
