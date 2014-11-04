@@ -21,23 +21,11 @@ public class App {
         int h = Integer.valueOf((String) prop.get("hour_limit"));
         Api api = new Api(appkey, secret);
         api.setHourLimit(h);
-        for (int i = 9899956; i < 9899957; i++) {
+        for (int i = 10062154; i < 10062155; i++) {
             try {
                 Entry e = api.getEntryString(i);
+                e.inflate(e.getBody());
                 e = EntryService.save(e);
-//                String [] receivers = e.getBody().split("\\s");
-//                for(String receiver : receivers){
-////                    System.out.println(receiver);
-//                    if(receiver.matches("#\\w+")) {
-//
-//                        System.out.println(receiver);
-//                    }
-//                }
-//                for(int a = 0; a<e.getComments().size(); a++){
-//                    EntryComment ec = EntryCommentService.save(e.getComments().get(a));
-//                    System.out.println(ec);
-//                }
-//                System.out.println(e);
             } catch (WykopException e) {
                 System.out.println("Wpis nie istnieje!");
             }

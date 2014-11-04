@@ -22,7 +22,7 @@ public class Tag {
     private String name;
     @Column(name = "entry_id")
     private long entryId;
-    @ManyToMany(mappedBy = "id")
+    @ManyToMany(mappedBy = "tags")
     private List<Entry> entries;
 
     public String getName() {

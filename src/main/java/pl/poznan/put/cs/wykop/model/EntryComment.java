@@ -16,7 +16,7 @@ public class EntryComment{
     @Column(name = "vote_count")
     private long voteCount;
     @ManyToOne
-    @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "entry_id", referencedColumnName = "id", insertable = false, updatable = false)
     private Entry entry;
     @Column(name = "entry_id")
     private long entryId;

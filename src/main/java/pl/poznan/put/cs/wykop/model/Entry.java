@@ -9,8 +9,11 @@ import javax.persistence.CascadeType;
 import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Entity
 @Table(name = "entry")
@@ -200,7 +203,19 @@ public class Entry {
         this.deleted = deleted;
     }
 
-
+    public void inflate(String content){
+        Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
+        Matcher matcher = pattern.matcher(content);
+        tags = new ArrayList<Tag>();
+        while(matcher.find())
+        {
+            Tag t = new Tag();
+            t.setName(matcher.group());
+            tags.add(t);
+        }
+        for(Tag tag : tags)
+        System.out.println(tag.getName());
+    }
 
     @Override
     public String toString() {
