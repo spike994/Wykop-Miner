@@ -19,11 +19,12 @@ public class Tag {
     @Column(name = "id")
     private int id;
     @Column(name = "name")
-    private String name;
+     private String name;
     @Column(name = "entry_id")
     private long entryId;
     @ManyToMany(mappedBy = "tags")
     private List<Entry> entries;
+
 
     public String getName() {
         return name;

@@ -5,8 +5,6 @@
         import pl.poznan.put.cs.wykop.connection.WykopException;
         import pl.poznan.put.cs.wykop.json.JsonException;
         import pl.poznan.put.cs.wykop.model.Entry;
-        import pl.poznan.put.cs.wykop.model.EntryComment;
-        import pl.poznan.put.cs.wykop.service.EntryCommentService;
         import pl.poznan.put.cs.wykop.service.EntryService;
         import java.io.IOException;
         import java.io.InputStream;
@@ -24,7 +22,7 @@ public class App {
         for (int i = 10062154; i < 10062155; i++) {
             try {
                 Entry e = api.getEntryString(i);
-                e.inflate(e.getBody());
+                e.inflateTags(e.getBody());
                 e = EntryService.save(e);
             } catch (WykopException e) {
                 System.out.println("Wpis nie istnieje!");

@@ -1,6 +1,7 @@
 package pl.poznan.put.cs.wykop.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by dk994 on 08.11.14.
@@ -34,6 +35,9 @@ public class User {
     private int evaluatedLinks;
     @Column(name ="groups")
     private int groups;
+    @ManyToMany(mappedBy = "receivers")
+    private List<Entry> entries;
+
 
     public int getId() {
         return id;

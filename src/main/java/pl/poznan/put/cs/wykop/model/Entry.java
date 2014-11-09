@@ -44,8 +44,11 @@ public class Entry {
     @Id
     @Column(name = "id")
     private long id;
-    @Column(name = "receiver")
-    private String receiver;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name = "entry_receiver",
+        joinColumns = {@JoinColumn(name = "entry_id")},
+            inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
+    private List<User> receivers;
     @Column(name = "source")
     private String source;
     @Column(name = "type")
@@ -54,6 +57,8 @@ public class Entry {
     private String url;
     @Column(name = "votes")
     private long voteCount;
+    @Column(name = "receiver")
+    private String receiver;
     @Transient
     private List<Voter> voters;
     @ManyToMany(cascade = {CascadeType.ALL})
@@ -203,7 +208,7 @@ public class Entry {
         this.deleted = deleted;
     }
 
-    public void inflate(String content){
+    public void inflateTags(String content){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(content);
         tags = new ArrayList<Tag>();
@@ -215,6 +220,18 @@ public class Entry {
         }
         for(Tag tag : tags)
         System.out.println(tag.getName());
+    }
+
+    public void inflateReceivers(String content){
+        Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
+        Matcher matcher = pattern.matcher(content);
+        receivers = new ArrayList<User>();
+        while(matcher.find())
+        {
+            User user = new User();
+            user.setName(matcher.group());
+            receivers.add(user);
+        }
     }
 
     @Override
