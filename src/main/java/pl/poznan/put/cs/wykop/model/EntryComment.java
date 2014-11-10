@@ -15,6 +15,9 @@ import java.util.regex.Pattern;
 @Table(name = "entry_comment")
 @JsonIgnoreProperties({ "author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo", "author_group", "author_sex", "user_vote", "violation_url" })
 public class EntryComment{
+    @Id
+    @Column(name = "id")
+    private long id;
     @Column(name = "vote_count")
     private long voteCount;
     @ManyToOne
@@ -26,21 +29,16 @@ public class EntryComment{
     private String app;
     @Column(name = "author")
     private String author;
-    @Transient
     @Column(name = "blocked")
     private boolean blocked;
     @Column(name = "content")
     private String body;
     @Column(name = "date")
     private Date date;
-    @Transient
     @Column(name = "deleted")
     private boolean deleted;
     @Transient
     private Embed embed;
-    @Id
-    @Column(name = "id")
-    private long id;
     @Column(name = "receiver")
     private String receiver;
     @Column(name = "source")
@@ -49,19 +47,47 @@ public class EntryComment{
     private String type;
     @Column(name = "url")
     private String url;
+
     @Transient
     private List<Voter> voters;
+
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="entry_comment_tag",
             joinColumns={@JoinColumn(name="entry_comment_id")},
             inverseJoinColumns={@JoinColumn(name="tag_id")})
     private List<Tag> tags;
 
-
-
     public String getApp() {
 		return app;
 	}
+
+    public void setVoteCount(long voteCount) {
+        this.voteCount = voteCount;
+    }
+
+    public String getReceiver() {
+        return receiver;
+    }
+
+    public void setReceiver(String receiver) {
+        this.receiver = receiver;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
 
 	public String getAuthor() {
 		return author;

@@ -32,13 +32,14 @@ public class Entry {
     @Column(name = "comment_count")
     private long commentCount;
     @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
+    private List<Voter> voters;
+    @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
     private List<EntryComment> comments;
     @Column(name = "date")
     private Date date;
-    @Transient
     @Column(name = "deleted")
     private boolean deleted;
-//    @Column(name = "embed")
+    //    @Column(name = "embed")
     @Transient
     private Embed embed;
     @Id
@@ -57,11 +58,8 @@ public class Entry {
     private String url;
     @Column(name = "votes")
     private long voteCount;
-    @Transient
     @Column(name = "receiver")
     private String receiver;
-    @Transient
-    private List<Voter> voters;
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="entry_tag",
             joinColumns={@JoinColumn(name="entry_id")},
