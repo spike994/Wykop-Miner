@@ -19,10 +19,11 @@ public class App {
         int h = Integer.valueOf((String) prop.get("hour_limit"));
         Api api = new Api(appkey, secret);
         api.setHourLimit(h);
-        for (int i = 10062154; i < 10062155; i++) {
+        for (int i = 10131208; i < 10131209; i++) {
             try {
                 Entry e = api.getEntryString(i);
                 e.inflateTags(e.getBody());
+                e.inflateReceivers(e.getBody());
                 e = EntryService.save(e);
             } catch (WykopException e) {
                 System.out.println("Wpis nie istnieje!");

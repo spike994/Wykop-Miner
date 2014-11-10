@@ -37,6 +37,8 @@ public class User {
     private int groups;
     @ManyToMany(mappedBy = "receivers")
     private List<Entry> entries;
+    @ManyToMany(mappedBy = "receivers")
+    private List<EntryComment> entryComments;
 
 
     public int getId() {

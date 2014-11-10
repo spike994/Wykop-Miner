@@ -30,6 +30,9 @@ public class Voter {
 		this.date = date;
 	}
 
+    private Entry entry;
+    private EntryComment entryComment;
+
 	@Override
 	public String toString() {
 		return "Voter [author=" + author + ", date=" + date + "]";

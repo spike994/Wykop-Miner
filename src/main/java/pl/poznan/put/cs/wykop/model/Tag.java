@@ -24,6 +24,8 @@ public class Tag {
     private long entryId;
     @ManyToMany(mappedBy = "tags")
     private List<Entry> entries;
+    @ManyToMany(mappedBy = "tags")
+    private List<EntryComment> entryComments;
 
 
     public String getName() {

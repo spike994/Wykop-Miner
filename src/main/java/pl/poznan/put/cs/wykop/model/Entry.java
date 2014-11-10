@@ -48,7 +48,7 @@ public class Entry {
     @JoinTable(name = "entry_receiver",
         joinColumns = {@JoinColumn(name = "entry_id")},
             inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
-    private List<User> receivers;
+    private List<Receiver> receivers;
     @Column(name = "source")
     private String source;
     @Column(name = "type")
@@ -57,6 +57,7 @@ public class Entry {
     private String url;
     @Column(name = "votes")
     private long voteCount;
+    @Transient
     @Column(name = "receiver")
     private String receiver;
     @Transient
@@ -225,12 +226,12 @@ public class Entry {
     public void inflateReceivers(String content){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(content);
-        receivers = new ArrayList<User>();
+        receivers = new ArrayList<Receiver>();
         while(matcher.find())
         {
-            User user = new User();
-            user.setName(matcher.group());
-            receivers.add(user);
+            Receiver receiver = new Receiver();
+            receiver.setName(matcher.group());
+            receivers.add(receiver);
         }
     }
 

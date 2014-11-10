@@ -5,8 +5,10 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Entity
@@ -49,9 +51,15 @@ public class EntryComment{
     private String url;
     @Transient
     private List<Voter> voters;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="entry_comment_tag",
+            joinColumns={@JoinColumn(name="entry_comment_id")},
+            inverseJoinColumns={@JoinColumn(name="tag_id")})
+    private List<Tag> tags;
 
 
-	public String getApp() {
+
+    public String getApp() {
 		return app;
 	}
 
@@ -176,6 +184,21 @@ public class EntryComment{
 	public void setVoters(List<Voter> voters) {
 		this.voters = voters;
 	}
+
+    public void inflateTags(String content){
+        Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
+        Matcher matcher = pattern.matcher(content);
+        tags = new ArrayList<Tag>();
+        while(matcher.find())
+        {
+            Tag t = new Tag();
+            t.setName(matcher.group());
+            tags.add(t);
+        }
+        for(Tag tag : tags)
+            System.out.println(tag.getName());
+    }
+
 
 	@Override
 	public String toString() {
