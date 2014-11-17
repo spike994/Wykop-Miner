@@ -47,9 +47,13 @@ public class EntryComment{
     private String type;
     @Column(name = "url")
     private String url;
-
-    @Transient
-    private List<Voter> voters;
+	@ManyToMany(cascade = {CascadeType.ALL})
+	@JoinTable(name = "entry_comment_receiver",
+			joinColumns = {@JoinColumn(name = "entry_comment_id")},
+			inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
+	private List<Receiver> receivers;
+	@OneToMany(mappedBy = "entryComment", cascade = CascadeType.ALL)
+	private List<Voter> voters;
 
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="entry_comment_tag",
@@ -225,7 +229,17 @@ public class EntryComment{
             System.out.println(tag.getName());
     }
 
-
+	public void inflateReceivers(String content){
+		Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
+		Matcher matcher = pattern.matcher(content);
+		receivers = new ArrayList<Receiver>();
+		while(matcher.find())
+		{
+			Receiver receiver = new Receiver();
+			receiver.setName(matcher.group());
+			receivers.add(receiver);
+		}
+	}
 	@Override
 	public String toString() {
 		return "EntryComment [app=" + app + ", author=" + author + ", blocked=" + blocked + ", body=" + body + ", date=" + date + ", deleted=" + deleted + ", embed=" + embed + ", entryId=" + entryId

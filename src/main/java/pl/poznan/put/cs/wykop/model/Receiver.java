@@ -15,7 +15,7 @@ public class Receiver {
         private int id;
         @Column(name = "name")
         private String name;
-        @ManyToMany(mappedBy = "tags")
+        @ManyToMany(mappedBy = "receivers")
         private List<Entry> entries;
 
     public int getId() {
