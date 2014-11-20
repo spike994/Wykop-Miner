@@ -22,7 +22,7 @@ public class EntryCommentVoter {
     private Date date;
     @ManyToOne
     @JoinColumn(name = "entry_id", referencedColumnName = "id", insertable = false, updatable = false)
-    private Entry entry;
+    private EntryComment entryComment;
     @Column(name = "entry_id")
     private long entryId;
 
@@ -32,18 +32,6 @@ public class EntryCommentVoter {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public Entry getEntry() {
-        return entry;
-    }
-
-    public void setEntry(Entry entry) {
-        this.entry = entry;
-    }
-
-    public EntryComment getEntryComment() {
-        return entryComment;
     }
 
     public void setEntryComment(EntryComment entryComment) {
@@ -76,10 +64,10 @@ public class EntryCommentVoter {
     public void setDate(Date date) {
         this.date = date;
     }
-    @Transient
-    private EntryComment entryComment;
 
-
+    public EntryComment getEntryComment() {
+        return entryComment;
+    }
 
     @Override
     public String toString() {

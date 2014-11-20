@@ -34,7 +34,8 @@
         <mapping class="pl.poznan.put.cs.wykop.model.EntryComment"/>
         <mapping class="pl.poznan.put.cs.wykop.model.Tag"/>
         <mapping class="pl.poznan.put.cs.wykop.model.Receiver"/>
-        <mapping class="pl.poznan.put.cs.wykop.model.Voter"/>
+        <mapping class="pl.poznan.put.cs.wykop.model.EntryVoter"/>
+        <mapping class="pl.poznan.put.cs.wykop.model.EntryCommentVoter"/>
 
 
     </session-factory>

@@ -32,7 +32,7 @@ public class Entry {
     @Column(name = "comment_count")
     private long commentCount;
     @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
-    private List<Voter> voters;
+    private List<EntryVoter> voters;
     @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
     private List<EntryComment> comments;
     @Column(name = "date")
@@ -180,12 +180,12 @@ public class Entry {
         this.voteCount = voteCount;
     }
 
-    public List<Voter> getVoters() {
+    public List<EntryVoter> getVoters() {
         return voters;
     }
 
     @JsonProperty("voters")
-    public void setVoters(List<Voter> voters) {
+    public void setVoters(List<EntryVoter> voters) {
         this.voters = voters;
     }
 

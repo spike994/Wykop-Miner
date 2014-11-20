@@ -53,7 +53,7 @@ public class EntryComment{
 			inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
 	private List<Receiver> receivers;
 	@OneToMany(mappedBy = "entryComment", cascade = CascadeType.ALL)
-	private List<Voter> voters;
+	private List<EntryCommentVoter> voters;
 
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="entry_comment_tag",
@@ -129,7 +129,7 @@ public class EntryComment{
 		return voteCount;
 	}
 
-	public List<Voter> getVoters() {
+	public List<EntryCommentVoter> getVoters() {
 		return voters;
 	}
 
@@ -211,7 +211,7 @@ public class EntryComment{
 	}
 
 	@JsonProperty("voters")
-	public void setVoters(List<Voter> voters) {
+	public void setVoters(List<EntryCommentVoter> voters) {
 		this.voters = voters;
 	}
 
