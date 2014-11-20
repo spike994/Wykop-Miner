@@ -17,20 +17,21 @@ public class Tag {
     @Id
     @GeneratedValue
     @Column(name = "id")
-    private int id;
+    private long id;
     @Column(name = "name")
      private String name;
     @Column(name = "entry_id")
     private long entryId;
     @ManyToMany(mappedBy = "tags")
     private List<Entry> entries;
+
     @ManyToMany(mappedBy = "tags")
     private List<EntryComment> entryComments;
-
 
     public String getName() {
         return name;
     }
+
 
     public void setName(String name) {
         this.name = name;
@@ -52,12 +53,20 @@ public class Tag {
         this.entries = entries;
     }
 
-    public int getId() {
+    public long getId() {
 
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
+    }
+
+    public List<EntryComment> getEntryComments() {
+        return entryComments;
+    }
+
+    public void setEntryComments(List<EntryComment> entryComments) {
+        this.entryComments = entryComments;
     }
 }

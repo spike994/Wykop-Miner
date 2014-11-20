@@ -24,7 +24,6 @@ public class Entry {
     private String app;
     @Column(name = "author")
     private String author;
-    @Transient
     @Column(name = "blocked")
     private boolean blocked;
     @Column(name = "content")
@@ -32,14 +31,14 @@ public class Entry {
     @Column(name = "comment_count")
     private long commentCount;
     @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
-    private List<Voter> voters;
+    private List<EntryVoter> voters;
     @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
     private List<EntryComment> comments;
     @Column(name = "date")
     private Date date;
     @Column(name = "deleted")
     private boolean deleted;
-    //    @Column(name = "embed")
+//  @Column(name = "embed")
     @Transient
     private Embed embed;
     @Id
@@ -54,6 +53,8 @@ public class Entry {
     private String source;
     @Column(name = "type")
     private String type;
+    @Column(name= "author_group")
+    private long authorGroup;
     @Column(name = "url")
     private String url;
     @Column(name = "votes")
@@ -180,12 +181,12 @@ public class Entry {
         this.voteCount = voteCount;
     }
 
-    public List<Voter> getVoters() {
+    public List<EntryVoter> getVoters() {
         return voters;
     }
 
     @JsonProperty("voters")
-    public void setVoters(List<Voter> voters) {
+    public void setVoters(List<EntryVoter> voters) {
         this.voters = voters;
     }
 
@@ -205,6 +206,14 @@ public class Entry {
     @JsonProperty("deleted")
     public void setDeleted(boolean deleted) {
         this.deleted = deleted;
+    }
+
+    public long getAuthorGroup() {
+        return authorGroup;
+    }
+
+    public void setAuthorGroup(long authorGroup) {
+        this.authorGroup = authorGroup;
     }
 
     public void inflateTags(String content){
