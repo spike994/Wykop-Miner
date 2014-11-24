@@ -19,7 +19,6 @@ public class App {
         int h = Integer.valueOf((String) prop.get("hour_limit"));
         Api api = new Api(appkey, secret);
         api.setHourLimit(h);
-        for (int i = 1; i < 2; i++) {
         for (int i = 10248082; i < 10268081; i++) {
             try {
                 Entry e = api.getEntryString(i);
