@@ -21,7 +21,7 @@ public class EntryComment{
     @Column(name = "vote_count")
     private long voteCount;
     @ManyToOne
-    @JoinColumn(name = "entry_id", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
     private Entry entry;
     @Column(name = "entry_id")
     private long entryId;
@@ -52,8 +52,11 @@ public class EntryComment{
 			joinColumns = {@JoinColumn(name = "entry_comment_id")},
 			inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
 	private List<Receiver> receivers;
-	@OneToMany(mappedBy = "entryComment", cascade = CascadeType.ALL)
-	private List<EntryCommentVoter> voters;
+	@ManyToMany(cascade = {CascadeType.ALL})
+	@JoinTable(name="entry_comment_voter",
+			joinColumns={@JoinColumn(name="entry_comment_id")},
+			inverseJoinColumns={@JoinColumn(name="voter_id")})
+	private List<Voter> voters;
 
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name="entry_comment_tag",
@@ -129,7 +132,7 @@ public class EntryComment{
 		return voteCount;
 	}
 
-	public List<EntryCommentVoter> getVoters() {
+	public List<Voter> getVoters() {
 		return voters;
 	}
 
@@ -211,7 +214,7 @@ public class EntryComment{
 	}
 
 	@JsonProperty("voters")
-	public void setVoters(List<EntryCommentVoter> voters) {
+	public void setVoters(List<Voter> voters) {
 		this.voters = voters;
 	}
 

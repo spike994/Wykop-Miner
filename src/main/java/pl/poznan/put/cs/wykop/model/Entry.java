@@ -30,8 +30,11 @@ public class Entry {
     private String body;
     @Column(name = "comment_count")
     private long commentCount;
-    @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
-    private List<EntryVoter> voters;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="entry_voter",
+            joinColumns={@JoinColumn(name="entry_id")},
+            inverseJoinColumns={@JoinColumn(name="voter_id")})
+    private List<Voter> voters;
     @OneToMany(mappedBy = "entry", cascade = CascadeType.ALL)
     private List<EntryComment> comments;
     @Column(name = "date")
@@ -181,12 +184,12 @@ public class Entry {
         this.voteCount = voteCount;
     }
 
-    public List<EntryVoter> getVoters() {
+    public List<Voter> getVoters() {
         return voters;
     }
 
     @JsonProperty("voters")
-    public void setVoters(List<EntryVoter> voters) {
+    public void setVoters(List<Voter> voters) {
         this.voters = voters;
     }
 
