@@ -20,8 +20,7 @@ public class Tag {
     private long id;
     @Column(name = "name")
      private String name;
-    @Column(name = "entry_id")
-    private long entryId;
+
     @ManyToMany(mappedBy = "tags")
     private List<Entry> entries;
 
@@ -35,14 +34,6 @@ public class Tag {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public long getEntryId() {
-        return entryId;
-    }
-
-    public void setEntryId(long entryId) {
-        this.entryId = entryId;
     }
 
     public List<Entry> getEntries() {

@@ -3,11 +3,18 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.persistence.*;
+
 @JsonIgnoreProperties("preview")
+@Embeddable
 public class Embed {
+	@Column(name = "embed_plus18")
 	private boolean plus18;
+	@Column(name = "embed_source")
 	private String source;
+	@Column(name = "embed_type")
 	private String type;
+	@Column(name = "embed_name")
 	private String url;
 
 	public String getSource() {

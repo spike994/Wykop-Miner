@@ -37,10 +37,11 @@ public class EntryComment{
     private Date date;
     @Column(name = "deleted")
     private boolean deleted;
-    @Transient
+    @Embedded
     private Embed embed;
     @Column(name = "receiver")
     private String receiver;
+	@Transient
     @Column(name = "source")
     private String source;
     @Column(name = "type")

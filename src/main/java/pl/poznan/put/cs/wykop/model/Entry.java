@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.annotation.Resource;
 import javax.persistence.CascadeType;
 
 import javax.persistence.*;
@@ -41,19 +42,19 @@ public class Entry {
     private Date date;
     @Column(name = "deleted")
     private boolean deleted;
-//  @Column(name = "embed")
-    @Transient
+    @Embedded
     private Embed embed;
     @Id
     @Column(name = "id")
     private long id;
+    @Transient
+    @Column(name = "source")
+    private String source;
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(name = "entry_receiver",
         joinColumns = {@JoinColumn(name = "entry_id")},
             inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
     private List<Receiver> receivers;
-    @Column(name = "source")
-    private String source;
     @Column(name = "type")
     private String type;
     @Column(name= "author_group")
@@ -79,7 +80,7 @@ public class Entry {
     public void setApp(String app) {
         this.app = app;
     }
-
+    @JsonProperty("embed")
     public void setEmbed(Embed embed) {
         this.embed = embed;
     }
