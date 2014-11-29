@@ -3,9 +3,7 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import pl.poznan.put.cs.wykop.util.TagManager;
 
-import javax.annotation.Resource;
 import javax.persistence.CascadeType;
 
 import javax.persistence.*;

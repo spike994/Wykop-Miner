@@ -5,8 +5,6 @@ import org.hibernate.SessionFactory;
 import pl.poznan.put.cs.wykop.model.Entry;
 import pl.poznan.put.cs.wykop.model.EntryComment;
 import pl.poznan.put.cs.wykop.util.HibernateUtil;
-import pl.poznan.put.cs.wykop.util.ReceiverManager;
-import pl.poznan.put.cs.wykop.util.TagManager;
 
 /**
  * Created by Dawid on 2014-10-09.

@@ -1,7 +1,8 @@
-package pl.poznan.put.cs.wykop.util;
+package pl.poznan.put.cs.wykop.service;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.criterion.Disjunction;
 import org.hibernate.criterion.Restrictions;
 import pl.poznan.put.cs.wykop.model.Tag;
 
@@ -15,15 +16,13 @@ import java.util.List;
 public class TagManager {
     public static List<Tag> filterTags(List<Tag> tags, Session session) {
         List<Tag> results = new ArrayList<Tag>();
-        List<Tag> helpfulList = new ArrayList<Tag>();
+        Criteria criteria = session.createCriteria(Tag.class);
+        Disjunction disjunction = Restrictions.disjunction();
         for(Tag tag : tags) {
-            Criteria criteria = session.createCriteria(Tag.class);
-            criteria.add(Restrictions.eq("name", tag.getName()));
-            helpfulList = criteria.list();
-            for(Tag t : helpfulList){
-                results.add(t);
-            }
+            disjunction.add(Restrictions.eq("name", tag.getName()));
         }
+        criteria.add(disjunction);
+        results = criteria.list();
         for(Iterator<Tag> iterator = results.iterator();iterator.hasNext();){
             Tag t = iterator.next();
             for(Iterator<Tag> iterator1 = tags.iterator(); iterator1.hasNext();){
