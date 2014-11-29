@@ -219,7 +219,7 @@ public class EntryComment{
 		this.voters = voters;
 	}
 
-    public void inflateTags(String content){
+    public List<Tag> inflateTags(String content){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(content);
         tags = new ArrayList<Tag>();
@@ -229,8 +229,7 @@ public class EntryComment{
             t.setName(matcher.group());
             tags.add(t);
         }
-        for(Tag tag : tags)
-            System.out.println(tag.getName());
+        return tags;
     }
 
 	public void inflateReceivers(String content){

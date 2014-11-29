@@ -3,6 +3,7 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.poznan.put.cs.wykop.util.TagManager;
 
 import javax.annotation.Resource;
 import javax.persistence.CascadeType;
@@ -220,18 +221,23 @@ public class Entry {
         this.authorGroup = authorGroup;
     }
 
-    public void inflateTags(String content){
+
+
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public List<Tag> inflateTags(String content){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(content);
+
         tags = new ArrayList<Tag>();
-        while(matcher.find())
-        {
+        while(matcher.find()) {
             Tag t = new Tag();
             t.setName(matcher.group());
             tags.add(t);
         }
-        for(Tag tag : tags)
-        System.out.println(tag.getName());
+        return tags;
     }
 
     public void inflateReceivers(String content){
