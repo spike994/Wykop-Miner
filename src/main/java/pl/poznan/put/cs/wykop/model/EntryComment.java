@@ -219,7 +219,15 @@ public class EntryComment{
 		this.voters = voters;
 	}
 
-    public List<Tag> inflateTags(String content){
+	public List<Receiver> getReceivers() {
+		return receivers;
+	}
+
+	public void setReceivers(List<Receiver> receivers) {
+		this.receivers = receivers;
+	}
+
+	public List<Tag> inflateTags(String content){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(content);
         tags = new ArrayList<Tag>();
@@ -229,10 +237,11 @@ public class EntryComment{
             t.setName(matcher.group());
             tags.add(t);
         }
+
         return tags;
     }
 
-	public void inflateReceivers(String content){
+	public List<Receiver> inflateReceivers(String content){
 		Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
 		Matcher matcher = pattern.matcher(content);
 		receivers = new ArrayList<Receiver>();
@@ -242,6 +251,7 @@ public class EntryComment{
 			receiver.setName(matcher.group());
 			receivers.add(receiver);
 		}
+		return receivers;
 	}
 	@Override
 	public String toString() {

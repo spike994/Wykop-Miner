@@ -222,6 +222,17 @@ public class Entry {
     }
 
 
+    public List<Receiver> getReceivers() {
+        return receivers;
+    }
+
+    public void setReceivers(List<Receiver> receivers) {
+        this.receivers = receivers;
+    }
+
+    public List<Tag> getTags() {
+        return tags;
+    }
 
     public void setTags(List<Tag> tags) {
         this.tags = tags;
@@ -240,7 +251,7 @@ public class Entry {
         return tags;
     }
 
-    public void inflateReceivers(String content){
+    public List<Receiver> inflateReceivers(String content){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(content);
         receivers = new ArrayList<Receiver>();
@@ -250,6 +261,7 @@ public class Entry {
             receiver.setName(matcher.group());
             receivers.add(receiver);
         }
+        return receivers;
     }
 
     @Override

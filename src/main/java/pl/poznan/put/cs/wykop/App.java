@@ -23,16 +23,9 @@ public class App {
         int h = Integer.valueOf((String) prop.get("hour_limit"));
         Api api = new Api(appkey, secret);
         api.setHourLimit(h);
-        for (int i = 10385402; i < 10385405; i++) {
+        for (int i = 10385602; i < 10385796; i++) {
             try {
                 Entry e = api.getEntryString(i);
-//                e.setTags(EntryService.filterTags(e.inflateTags(e.getBody())));
-//                System.out.println("---------------------------------");
-////                e.inflateTags(e.getBody());
-//                for(EntryComment ec : e.getComments()){
-//                    ec.inflateReceivers(ec.getBody());
-////                    ec.inflateTags(ec.getBody());
-//                }
                 e = EntryService.save(e);
             } catch (WykopException e) {
 //                System.out.println("Wpis nie istnieje!");
