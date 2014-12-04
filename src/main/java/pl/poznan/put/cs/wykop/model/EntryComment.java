@@ -3,6 +3,7 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.poznan.put.cs.wykop.dao.ReceiverDAO;
 import pl.poznan.put.cs.wykop.dao.TagDAO;
 
 import javax.persistence.*;
@@ -233,29 +234,26 @@ public class EntryComment{
         while(matcher.find())
         {
 			  String name = matcher.group();
-			  Tag t = tagDAO.getTag(name);
-			  tags.add(t);
-         	  t.setName(matcher.group());
+			  Tag tag = tagDAO.getTag(name);
+			  tags.add(tag);
         }
     }
 
-	//TODO
-	public void hydrate(TagDAO tagDAO){
-		this.inflateTags(tagDAO);
-		this.inflateReceivers();
-	}
-
-	public Set<Receiver> inflateReceivers(){
+	public void inflateReceivers(ReceiverDAO receiverDAO){
 		Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
 		Matcher matcher = pattern.matcher(this.body);
 		receivers = new HashSet<Receiver>();
 		while(matcher.find())
 		{
-			Receiver receiver = new Receiver();
-			receiver.setName(matcher.group());
+			String name = matcher.group();
+			Receiver receiver = receiverDAO.getReceiver(name);
 			receivers.add(receiver);
 		}
-		return receivers;
+	}
+
+	public void hydrate(TagDAO tagDAO, ReceiverDAO receiverDAO){
+		this.inflateTags(tagDAO);
+		this.inflateReceivers(receiverDAO);
 	}
 	@Override
 	public String toString() {

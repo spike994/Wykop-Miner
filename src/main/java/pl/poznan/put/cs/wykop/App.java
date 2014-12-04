@@ -26,7 +26,7 @@ public class App {
         Session session = SessionManager.getSessionManager().getSession();
         api.setHourLimit(h);
         Transaction transaction;
-        for (int i = 10451340; i < 10451343; i++) {
+        for (int i = 10383624; i < 10383625; i++) {
             transaction = session.beginTransaction();
             try {
                 Entry entry = api.getEntryString(i);

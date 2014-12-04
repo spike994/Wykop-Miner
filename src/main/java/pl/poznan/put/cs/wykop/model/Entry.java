@@ -3,6 +3,7 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.poznan.put.cs.wykop.dao.ReceiverDAO;
 import pl.poznan.put.cs.wykop.dao.TagDAO;
 
 import javax.persistence.CascadeType;
@@ -52,7 +53,7 @@ public class Entry {
     @JoinTable(name = "entry_receiver",
         joinColumns = {@JoinColumn(name = "entry_id")},
             inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
-    private List<Receiver> receivers;
+    private Set<Receiver> receivers;
     @Column(name = "type")
     private String type;
     @Column(name= "author_group")
@@ -219,11 +220,11 @@ public class Entry {
     }
 
 
-    public List<Receiver> getReceivers() {
+    public Set<Receiver> getReceivers() {
         return receivers;
     }
 
-    public void setReceivers(List<Receiver> receivers) {
+    public void setReceivers(Set<Receiver> receivers) {
         this.receivers = receivers;
     }
 
@@ -235,6 +236,11 @@ public class Entry {
         this.tags = tags;
     }
 
+    public void hydrate(TagDAO tagDAO, ReceiverDAO receiverDAO){
+        inflateReceivers(receiverDAO);
+        inflateTags(tagDAO);
+    }
+
     public void inflateTags(TagDAO tagDAO){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(this.body);
@@ -242,22 +248,22 @@ public class Entry {
         while(matcher.find())
         {
             String name = matcher.group();
-            Tag t = tagDAO.getTag(name);
-            tags.add(t);
-            t.setName(matcher.group());
+            Tag tag = tagDAO.getTag(name);
+            tags.add(tag);
+            tag.setName(matcher.group());
         }
     }
-    public List<Receiver> inflateReceivers(String content){
+    public void inflateReceivers(ReceiverDAO receiverDAO){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
-        Matcher matcher = pattern.matcher(content);
-        receivers = new ArrayList<Receiver>();
+        Matcher matcher = pattern.matcher(this.body);
+        receivers = new HashSet<Receiver>();
         while(matcher.find())
         {
-            Receiver receiver = new Receiver();
-            receiver.setName(matcher.group());
-            receivers.add(receiver);
+            String name = matcher.group();
+            Receiver rec = receiverDAO.getReceiver(name);
+            receivers.add(rec);
+            rec.setName(matcher.group());
         }
-        return receivers;
     }
 
     @Override
