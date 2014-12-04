@@ -1,41 +1,45 @@
 
         package pl.poznan.put.cs.wykop;
+        import org.hibernate.Session;
+        import org.hibernate.SessionFactory;
+        import org.hibernate.Transaction;
         import org.hibernate.exception.ConstraintViolationException;
         import pl.poznan.put.cs.wykop.api.Api;
         import pl.poznan.put.cs.wykop.connection.ConnectionException;
         import pl.poznan.put.cs.wykop.connection.WykopException;
         import pl.poznan.put.cs.wykop.json.JsonException;
         import pl.poznan.put.cs.wykop.model.Entry;
-        import pl.poznan.put.cs.wykop.model.EntryComment;
-        import pl.poznan.put.cs.wykop.model.Tag;
+        import pl.poznan.put.cs.wykop.service.ConfigManager;
         import pl.poznan.put.cs.wykop.service.EntryService;
+        import pl.poznan.put.cs.wykop.service.SessionManager;
+        import pl.poznan.put.cs.wykop.util.HibernateUtil;
+
         import java.io.IOException;
-        import java.io.InputStream;
-        import java.util.List;
-        import java.util.Properties;
 public class App {
     public static void main(String[] args) throws IOException, ConnectionException, JsonException {
-        Properties prop = new Properties();
-        InputStream propStream = ClassLoader.getSystemResourceAsStream("wykop.properties");
-        prop.load(propStream);
-        String appkey = (String) prop.get("appkey");
-        String secret = (String) prop.get("secret");
-        int h = Integer.valueOf((String) prop.get("hour_limit"));
+
+        ConfigManager configManager = ConfigManager.getConfigManager();
+        String appkey = (String) configManager.getProperty("appkey");
+        String secret = (String) configManager.getProperty("secret");
+        int h = Integer.valueOf((String) configManager.getProperty("hour_limit"));
         Api api = new Api(appkey, secret);
+        Session session = SessionManager.getSessionManager().getSession();
         api.setHourLimit(h);
-        for (int i = 10385602; i < 10385796; i++) {
+        Transaction transaction;
+        for (int i = 10451340; i < 10451343; i++) {
+            transaction = session.beginTransaction();
             try {
-                Entry e = api.getEntryString(i);
-                e = EntryService.save(e);
+                Entry entry = api.getEntryString(i);
+                EntryService.save(entry, session);
+                transaction.commit();
             } catch (WykopException e) {
+                transaction.rollback();
 //                System.out.println("Wpis nie istnieje!");
             } catch (ConstraintViolationException e){
-
+                transaction.rollback();
             }
         }
-
-
-
+        session.close();
     }
 }
 

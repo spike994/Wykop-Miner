@@ -3,15 +3,14 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.poznan.put.cs.wykop.dao.TagDAO;
 
 import javax.persistence.CascadeType;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -68,7 +67,7 @@ public class Entry {
     @JoinTable(name="entry_tag",
             joinColumns={@JoinColumn(name="entry_id")},
             inverseJoinColumns={@JoinColumn(name="tag_id")})
-    private List<Tag> tags;
+    private Set<Tag> tags;
 
 
     public String getApp() {
@@ -228,27 +227,26 @@ public class Entry {
         this.receivers = receivers;
     }
 
-    public List<Tag> getTags() {
+    public Set<Tag> getTags() {
         return tags;
     }
 
-    public void setTags(List<Tag> tags) {
+    public void setTags(Set<Tag> tags) {
         this.tags = tags;
     }
 
-    public List<Tag> inflateTags(String content){
+    public void inflateTags(TagDAO tagDAO){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
-        Matcher matcher = pattern.matcher(content);
-
-        tags = new ArrayList<Tag>();
-        while(matcher.find()) {
-            Tag t = new Tag();
-            t.setName(matcher.group());
+        Matcher matcher = pattern.matcher(this.body);
+        tags = new HashSet<Tag>();
+        while(matcher.find())
+        {
+            String name = matcher.group();
+            Tag t = tagDAO.getTag(name);
             tags.add(t);
+            t.setName(matcher.group());
         }
-        return tags;
     }
-
     public List<Receiver> inflateReceivers(String content){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
         Matcher matcher = pattern.matcher(content);

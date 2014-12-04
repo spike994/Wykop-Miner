@@ -3,11 +3,10 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.poznan.put.cs.wykop.dao.TagDAO;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -52,7 +51,7 @@ public class EntryComment{
 	@JoinTable(name = "entry_comment_receiver",
 			joinColumns = {@JoinColumn(name = "entry_comment_id")},
 			inverseJoinColumns = {@JoinColumn(name = "receiver_id")})
-	private List<Receiver> receivers;
+	private Set<Receiver> receivers;
 	@ManyToMany(cascade = {CascadeType.ALL})
 	@JoinTable(name="entry_comment_voter",
 			joinColumns={@JoinColumn(name="entry_comment_id")},
@@ -63,7 +62,7 @@ public class EntryComment{
     @JoinTable(name="entry_comment_tag",
             joinColumns={@JoinColumn(name="entry_comment_id")},
             inverseJoinColumns={@JoinColumn(name="tag_id")})
-    private List<Tag> tags;
+    private Set<Tag> tags;
 
     public String getApp() {
 		return app;
@@ -89,11 +88,11 @@ public class EntryComment{
         this.url = url;
     }
 
-    public List<Tag> getTags() {
+    public Set<Tag> getTags() {
         return tags;
     }
 
-    public void setTags(List<Tag> tags) {
+    public void setTags(Set<Tag> tags) {
         this.tags = tags;
     }
 
@@ -219,32 +218,37 @@ public class EntryComment{
 		this.voters = voters;
 	}
 
-	public List<Receiver> getReceivers() {
+	public Set<Receiver> getReceivers() {
 		return receivers;
 	}
 
-	public void setReceivers(List<Receiver> receivers) {
+	public void setReceivers(Set<Receiver> receivers) {
 		this.receivers = receivers;
 	}
 
-	public List<Tag> inflateTags(String content){
+	public void inflateTags(TagDAO tagDAO){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
-        Matcher matcher = pattern.matcher(content);
-        tags = new ArrayList<Tag>();
+        Matcher matcher = pattern.matcher(this.body);
+        tags = new HashSet<Tag>();
         while(matcher.find())
         {
-            Tag t = new Tag();
-            t.setName(matcher.group());
-            tags.add(t);
+			  String name = matcher.group();
+			  Tag t = tagDAO.getTag(name);
+			  tags.add(t);
+         	  t.setName(matcher.group());
         }
-
-        return tags;
     }
 
-	public List<Receiver> inflateReceivers(String content){
+	//TODO
+	public void hydrate(TagDAO tagDAO){
+		this.inflateTags(tagDAO);
+		this.inflateReceivers();
+	}
+
+	public Set<Receiver> inflateReceivers(){
 		Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
-		Matcher matcher = pattern.matcher(content);
-		receivers = new ArrayList<Receiver>();
+		Matcher matcher = pattern.matcher(this.body);
+		receivers = new HashSet<Receiver>();
 		while(matcher.find())
 		{
 			Receiver receiver = new Receiver();
