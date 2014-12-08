@@ -1,6 +1,9 @@
 package pl.poznan.put.cs.wykop.connection;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.IOUtils;
@@ -60,7 +63,7 @@ public class Connection {
 			} else {
 				return res;
 			}
-		} catch (IOException e) {
+		}catch (IOException e) {
 			throw new ConnectionException(e);
 		}
 	}
@@ -110,6 +113,7 @@ public class Connection {
 				Thread.sleep(rest);
 			} catch (InterruptedException e) {
 				// do nothing
+				System.out.println("Interrupted");
 			}
 		}
 	}
