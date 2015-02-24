@@ -6,12 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import pl.poznan.put.cs.wykop.dao.ReceiverDAO;
 import pl.poznan.put.cs.wykop.dao.TagDAO;
 
-import javax.persistence.CascadeType;
-
 import javax.persistence.*;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.util.*;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -45,7 +44,7 @@ public class Entry {
     private Embed embed;
     @Id
     @Column(name = "id")
-    private long id;
+    private long id;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     @Transient
     @Column(name = "source")
     private String source;

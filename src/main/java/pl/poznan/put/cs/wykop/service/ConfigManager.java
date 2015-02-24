@@ -8,7 +8,6 @@ import java.util.Properties;
  * Created by dk994 on 04.12.14.
  */
 public class ConfigManager {
-    //TODO singleton
     private Properties properties;
 
     protected ConfigManager(){
