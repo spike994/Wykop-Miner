@@ -5,6 +5,7 @@ import pl.poznan.put.cs.wykop.connection.ConnectionException;
 import pl.poznan.put.cs.wykop.json.JSON;
 import pl.poznan.put.cs.wykop.json.JsonException;
 import pl.poznan.put.cs.wykop.model.Entry;
+import pl.poznan.put.cs.wykop.model.Link;
 
 public class Api {
 	private Connection conn;
@@ -21,8 +22,8 @@ public class Api {
 		return this.getJsonResponse("link/comments", "" + i);
 	}
 
-	public String getLinkString(int i) throws ConnectionException {
-		return this.getJsonResponse("link/index", "" + i);
+	public Link getLinkString(int i) throws ConnectionException, JsonException {
+		return this.getObject("link/index",""+i, Link.class);
 	}
 
 	public String getProfileString(String username) throws ConnectionException {

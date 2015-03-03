@@ -1,14 +1,25 @@
 package pl.poznan.put.cs.wykop.model;
 
+import java.sql.Date;
+import java.util.List;
+
 /**
  * Created by dk994 on 23.02.15.
  */
 public class Link {
-    int id;
-    String title;
-    String description;
-    String tags;
-    String url;
+    private int id;
+    private String title;
+    private String description;
+    private List<Tag> tags;
+    private String url;
+    private Date date;
+    private String source;
+    private String author;
+    private int voteCount;
+    private int commentCount;
+    private boolean adult;
+    private String category;
+    private int reportCount;
 
     public int getId() {
         return id;
@@ -34,12 +45,76 @@ public class Link {
         this.description = description;
     }
 
-    public String getTags() {
+    public List<Tag> getTags() {
         return tags;
     }
 
-    public void setTags(String tags) {
+    public void setTags(List<Tag> tags) {
         this.tags = tags;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getVoteCount() {
+        return voteCount;
+    }
+
+    public void setVoteCount(int voteCount) {
+        this.voteCount = voteCount;
+    }
+
+    public int getCommentCount() {
+        return commentCount;
+    }
+
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
+    }
+
+    public boolean isAdult() {
+        return adult;
+    }
+
+    public void setAdult(boolean adult) {
+        this.adult = adult;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public int getReportCount() {
+        return reportCount;
+    }
+
+    public void setReportCount(int reportCount) {
+        this.reportCount = reportCount;
     }
 
     public String getUrl() {
