@@ -1,5 +1,8 @@
 package pl.poznan.put.cs.wykop.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.sql.Date;
 import java.util.List;
 
@@ -7,7 +10,7 @@ import java.util.List;
  * Created by dk994 on 23.02.15.
  */
 public class Link {
-    private int id;
+    private long id;
     private String title;
     private String description;
     private List<Tag> tags;
@@ -21,11 +24,11 @@ public class Link {
     private String category;
     private int reportCount;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
-
-    public void setId(int id) {
+    @JsonProperty("id")
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -52,11 +55,11 @@ public class Link {
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
-
     public Date getDate() {
         return date;
     }
-
+    @JsonProperty("date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "CET")
     public void setDate(Date date) {
         this.date = date;
     }
