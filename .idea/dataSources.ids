@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="hibernate.cfg.xml" uuid="a31f0bd5-831b-43ea-aed6-3e71d7451275">
-    <database-info product="PostgreSQL" version="9.3.5" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4.1 (build 1102)">
+    <database-info product="PostgreSQL" version="9.3.6" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4.1 (build 1102)">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>

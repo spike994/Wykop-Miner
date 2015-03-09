@@ -1,6 +1,7 @@
 package pl.poznan.put.cs.wykop.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.sql.Date;
@@ -9,6 +10,11 @@ import java.util.List;
 /**
  * Created by dk994 on 23.02.15.
  */
+@JsonIgnoreProperties({"tags","source_url","vote_count","comment_count","report_count","related_count","author_group",
+"author_avatar", "author_avatar_big","author_avatar_med","author_avatar_lo","author_sex","type",
+"group","preview","user_vote","user_favorite","user_observe","user_lists","plus18","status","can_vote","has_own_content",
+        "is_hot", "category_name", "violation_url", "info","app", "own_content",
+})
 public class Link {
     private long id;
     private String title;
@@ -35,7 +41,7 @@ public class Link {
     public String getTitle() {
         return title;
     }
-
+    @JsonProperty("title")
     public void setTitle(String title) {
         this.title = title;
     }
@@ -129,6 +135,6 @@ public class Link {
     }
     
     public String toString(){
-        return "ID:"+id;
+        return "ID:"+getId()+" title:"+ getTitle();
     }
 }
