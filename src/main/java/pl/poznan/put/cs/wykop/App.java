@@ -19,7 +19,7 @@ public class App {
         api.setHourLimit(h);
 //        Entry e = api.getEntryString(1);
 //        System.out.println(e.toString());
-        Link link = api.getLinkString(2027714);
+        Link link = api.getLinkString(2438353);
         System.out.println(link.toString());
 
     }

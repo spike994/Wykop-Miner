@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="273e1baf-73e5-468b-9019-740767a5ac97" name="Default" comment="Link model Introduction">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Wykop-Miner.iws" />
@@ -69,64 +69,50 @@
       <file leaf-file-name="Link.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41304347" vertical-offset="2352" max-vertical-offset="2628">
-              <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.8811445" vertical-offset="2057" max-vertical-offset="3438">
+              <caret line="225" column="38" selection-start-line="225" selection-start-column="38" selection-end-line="225" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1194#1195#0" expanded="true" />
-                <element signature="e#1222#1223#0" expanded="true" />
-                <element signature="e#1254#1255#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
-                <element signature="e#1350#1351#0" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-                <element signature="e#1456#1457#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1590#1591#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1660#1661#0" expanded="true" />
-                <element signature="e#1692#1693#0" expanded="true" />
-                <element signature="e#1720#1721#0" expanded="true" />
-                <element signature="e#1747#1748#0" expanded="true" />
-                <element signature="e#1910#1911#0" expanded="true" />
-                <element signature="e#1942#1943#0" expanded="true" />
-                <element signature="e#1975#1976#0" expanded="true" />
-                <element signature="e#2004#2005#0" expanded="true" />
-                <element signature="e#2048#2049#0" expanded="true" />
-                <element signature="e#2084#2085#0" expanded="true" />
-                <element signature="e#2117#2118#0" expanded="true" />
-                <element signature="e#2146#2147#0" expanded="true" />
-                <element signature="e#2190#2191#0" expanded="true" />
-                <element signature="e#2226#2227#0" expanded="true" />
-                <element signature="e#2259#2260#0" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2338#2339#0" expanded="true" />
-                <element signature="e#2380#2381#0" expanded="true" />
-                <element signature="e#2416#2417#0" expanded="true" />
-                <element signature="e#2451#2452#0" expanded="true" />
-                <element signature="e#2504#2505#0" expanded="true" />
-                <element signature="e#2552#2553#0" expanded="true" />
-                <element signature="e#2584#2585#0" expanded="true" />
-                <element signature="e#2612#2613#0" expanded="true" />
-                <element signature="e#2655#2656#0" expanded="true" />
-                <element signature="e#2689#2690#0" expanded="true" />
-                <element signature="e#2724#2725#0" expanded="true" />
-                <element signature="e#2755#2756#0" expanded="true" />
-                <element signature="e#2803#2804#0" expanded="true" />
-                <element signature="e#2843#2844#0" expanded="true" />
-                <element signature="e#2878#2879#0" expanded="true" />
-                <element signature="e#2912#2913#0" expanded="true" />
-                <element signature="e#2963#2964#0" expanded="true" />
-                <element signature="e#3009#3010#0" expanded="true" />
-                <element signature="e#3039#3040#0" expanded="true" />
-                <element signature="e#3065#3066#0" expanded="true" />
-                <element signature="e#3103#3104#0" expanded="true" />
-                <element signature="e#3133#3134#0" expanded="true" />
-                <element signature="e#3168#3169#0" expanded="true" />
-                <element signature="e#3226#3227#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1376#1377#0" expanded="true" />
+                <element signature="e#1406#1407#0" expanded="true" />
+                <element signature="e#1432#1433#0" expanded="true" />
+                <element signature="e#1494#1495#0" expanded="true" />
+                <element signature="e#1524#1525#0" expanded="true" />
+                <element signature="e#1555#1556#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1647#1648#0" expanded="true" />
+                <element signature="e#1679#1680#0" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
+                <element signature="e#1739#1740#0" expanded="true" />
+                <element signature="e#1807#1808#0" expanded="true" />
+                <element signature="e#1841#1842#0" expanded="true" />
+                <element signature="e#1875#1876#0" expanded="true" />
+                <element signature="e#1905#1906#0" expanded="true" />
+                <element signature="e#1979#1980#0" expanded="true" />
+                <element signature="e#2017#2018#0" expanded="true" />
+                <element signature="e#2053#2054#0" expanded="true" />
+                <element signature="e#2085#2086#0" expanded="true" />
+                <element signature="e#2166#2167#0" expanded="true" />
+                <element signature="e#2208#2209#0" expanded="true" />
+                <element signature="e#2244#2245#0" expanded="true" />
+                <element signature="e#2279#2280#0" expanded="true" />
+                <element signature="e#2367#2368#0" expanded="true" />
+                <element signature="e#2415#2416#0" expanded="true" />
+                <element signature="e#2487#2488#0" expanded="true" />
+                <element signature="e#2521#2522#0" expanded="true" />
+                <element signature="e#2575#2576#0" expanded="true" />
+                <element signature="e#2621#2622#0" expanded="true" />
+                <element signature="e#2648#2649#0" expanded="true" />
+                <element signature="e#2673#2674#0" expanded="true" />
+                <element signature="e#2731#2732#0" expanded="true" />
+                <element signature="e#2759#2760#0" expanded="true" />
+                <element signature="e#2790#2791#0" expanded="true" />
+                <element signature="e#2817#2818#0" expanded="true" />
+                <element signature="e#4743#4744#0" expanded="true" />
+                <element signature="e#4789#4790#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,11 +131,9 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="522">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,11 +141,9 @@
       <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2106">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1890">
+              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -214,9 +196,9 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/SessionManager.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java" />
+        <option value="db-console:/48957000/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" />
-        <option value="db-console:/48957000/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" />
       </list>
     </option>
@@ -244,10 +226,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
-    <option name="y" value="-4" />
-    <option name="width" value="1327" />
-    <option name="height" value="772" />
+    <option name="x" value="1405" />
+    <option name="y" value="24" />
+    <option name="width" value="1041" />
+    <option name="height" value="1896" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -278,6 +260,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -540,7 +523,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,7 +533,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="App&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;pom&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;A&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;Ap&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;Entry&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;app&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;po&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/pom.xml&#10;selection&#9;ACTION&#9;EditorToggleColumnMode&#10;E&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;en&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;c&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java&#10;Tag&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java&#10;Entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;Ta&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java&#10;e&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;Embe&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java&#10;entry&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;voter&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;hi&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;Ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;hib&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;vo&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;rece&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java&#10;ap&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;App&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;pom&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;A&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;Ap&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;Entry&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;po&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/pom.xml&#10;selection&#9;ACTION&#9;EditorToggleColumnMode&#10;E&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;en&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;c&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java&#10;Tag&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java&#10;Entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;Ta&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java&#10;e&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;Embe&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java&#10;entry&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;voter&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;hi&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;Ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;hib&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;vo&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;rece&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java&#10;ap&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -1078,7 +1060,10 @@
       <workItem from="1425411550877" duration="16391000" />
       <workItem from="1425752860103" duration="4413000" />
       <workItem from="1425850416934" duration="1885000" />
-      <workItem from="1425933908346" duration="2177000" />
+      <workItem from="1425933908346" duration="2794000" />
+      <workItem from="1425987362649" duration="46000" />
+      <workItem from="1426010434864" duration="2228000" />
+      <workItem from="1426021358882" duration="3168000" />
     </task>
     <task id="LOCAL-00001" summary="Tag.java  added.">
       <created>1414006728308</created>
@@ -1252,7 +1237,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451662000" />
+    <option name="totallyTimeSpent" value="457721000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1275,7 +1260,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="-4" width="1327" height="772" extended-state="6" />
+    <frame x="1405" y="24" width="1041" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1290,11 +1275,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47854078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50771606" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2188889" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.49960968" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21784386" sideWeight="0.50374067" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22404371" sideWeight="0.4937656" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28844222" sideWeight="0.4937656" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42154565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1744713" sideWeight="0.49618322" order="5" side_tool="false" content_ui="tabs" />
@@ -1398,13 +1383,13 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
@@ -1677,20 +1662,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/dao/ReceiverDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1505618" vertical-offset="59" max-vertical-offset="504">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1748,7 +1732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1756,7 +1739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="504">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1764,7 +1746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="450">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1772,7 +1753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1788,7 +1768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="468">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1796,7 +1775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1804,7 +1782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27510917" vertical-offset="0" max-vertical-offset="458">
           <caret line="11" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1828,7 +1805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029126214" vertical-offset="0" max-vertical-offset="618">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1836,7 +1812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30097088" vertical-offset="138" max-vertical-offset="756">
           <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1855,13 +1830,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="522">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2106">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1890">
+          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1873,76 +1854,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="630">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41304347" vertical-offset="2352" max-vertical-offset="2628">
-          <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.8811445" vertical-offset="2057" max-vertical-offset="3438">
+          <caret line="225" column="38" selection-start-line="225" selection-start-column="38" selection-end-line="225" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1456#1457#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1660#1661#0" expanded="true" />
-            <element signature="e#1692#1693#0" expanded="true" />
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-            <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="e#1942#1943#0" expanded="true" />
-            <element signature="e#1975#1976#0" expanded="true" />
-            <element signature="e#2004#2005#0" expanded="true" />
-            <element signature="e#2048#2049#0" expanded="true" />
-            <element signature="e#2084#2085#0" expanded="true" />
-            <element signature="e#2117#2118#0" expanded="true" />
-            <element signature="e#2146#2147#0" expanded="true" />
-            <element signature="e#2190#2191#0" expanded="true" />
-            <element signature="e#2226#2227#0" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2338#2339#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2416#2417#0" expanded="true" />
-            <element signature="e#2451#2452#0" expanded="true" />
-            <element signature="e#2504#2505#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2584#2585#0" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#2755#2756#0" expanded="true" />
-            <element signature="e#2803#2804#0" expanded="true" />
-            <element signature="e#2843#2844#0" expanded="true" />
-            <element signature="e#2878#2879#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2963#2964#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-            <element signature="e#3039#3040#0" expanded="true" />
-            <element signature="e#3065#3066#0" expanded="true" />
-            <element signature="e#3103#3104#0" expanded="true" />
-            <element signature="e#3133#3134#0" expanded="true" />
-            <element signature="e#3168#3169#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1647#1648#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1807#1808#0" expanded="true" />
+            <element signature="e#1841#1842#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2367#2368#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="e#2521#2522#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="e#2648#2649#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2759#2760#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2817#2818#0" expanded="true" />
+            <element signature="e#4743#4744#0" expanded="true" />
+            <element signature="e#4789#4790#0" expanded="true" />
           </folding>
         </state>
       </provider>

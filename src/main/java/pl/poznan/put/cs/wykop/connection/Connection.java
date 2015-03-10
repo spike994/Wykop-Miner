@@ -47,15 +47,12 @@ public class Connection {
         String sign = sign(url);
         HttpPost req = new HttpPost(url);
         req.addHeader("apisign", sign);
-        System.out.println(url);
         try {
             HttpResponse resp = this.execute(req);
             if (resp.getStatusLine().getStatusCode() != 200) {
-                System.out.println(resp.getStatusLine().getStatusCode());
                 throw new ConnectionException("Status code != 200.");
             }
             String res = IOUtils.toString(resp.getEntity().getContent(), "utf-8");
-            System.out.println(res);
             if (res.startsWith("{\"error\":{\"code\":")) {
                 String msg = JSON.readErrorMsg(res);
 
