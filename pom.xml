@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>jackson</name>
+    <login>jackson</login>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -183,7 +183,7 @@
     <repositories>
         <repository>
             <id>spring-maven-milestone</id>
-            <name>Spring Maven Milestone Repository</name>
+            <login>Spring Maven Milestone Repository</login>
             <url>http://maven.springframework.org/milestone</url>
         </repository>
     </repositories>

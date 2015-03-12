@@ -60,4 +60,5 @@ public class Tag {
     public void setEntryComments(List<EntryComment> entryComments) {
         this.entryComments = entryComments;
     }
+
 }

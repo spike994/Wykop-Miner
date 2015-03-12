@@ -9,8 +9,8 @@ import java.sql.Date;
 /**
  * Created by dk994 on 23.02.15.
  */
-@JsonIgnoreProperties({"author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo", "user_vote", "user_favorite", "user_observe", "user_lists", "status", "can_vote", "has_own_content",
-        "is_hot", "category_name", "violation_url", "info", "app", "own_content",
+@JsonIgnoreProperties({"author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo", "user_vote", "user_favorite", "user_observe", "user_lists", "status", "can_vote",
+        "is_hot", "violation_url", "info", "own_content",
 })
 public class Link {
     private long id;
@@ -33,7 +33,16 @@ public class Link {
     private String group;
     private String preview;
     private boolean hasOwnContent;
+    private String categoryName;
     private String app;
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+    @JsonProperty("category_name")
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
 
     public boolean isHasOwnContent() {
         return hasOwnContent;
@@ -215,15 +224,6 @@ public class Link {
         this.url = url;
     }
 
-    public String toString() {
-        return "id: " + getId() + "\n title: " + getTitle() + "\n url: " + getUrl() + "\n tags: " + getTags()
-                + "\n source url: " + getSource() + "\n vote count: " + getVoteCount() + "\n comment_count: " + getCommentCount()
-                + "\n description: " + getDescription() + "\n authorGroup: " + getAuthorGroup()
-                + "\n reportCount: " + getReportCount()+ "\n related_count: "+getRelatedCount()
-                + "\n date: "+getDate() + "\n category: " + getCategory() + "\n author: "+ getAuthor()
-                + "\n plus18: " + isAdult() + "\n authorSex: " + getAuthorSex() + "\n type: "+ getType()
-                + "\n group: " +getGroup() + "\n preview: " + getPreview() + "\n has_own_content: "+ isHasOwnContent()
-                + "\n app: " +getApp();
 
-    }
+
 }
