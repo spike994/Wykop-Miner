@@ -39,12 +39,19 @@ public class User {
     private int publishedLinks;
     @Column(name = "groups")
     private int groups;
+    @Column(name = "related_links")
     private int relatedLinks;
+    @Column(name = "links_added")
     private int linksAdded;
+    @Column(name = "entry_count")
     private int entryCount;
+    @Column( name = "sex")
     private String sex;
+    @Column(name = "url")
     private String url;
+    @Column(name = "signup_date")
     private Date signUpDate;
+    @Column(name = "user_group")
     private int userGroup;
     @ManyToMany(mappedBy = "receivers")
     private List<Entry> entries;

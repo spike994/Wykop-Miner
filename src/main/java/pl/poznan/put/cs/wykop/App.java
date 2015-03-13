@@ -4,7 +4,6 @@ import pl.poznan.put.cs.wykop.api.Api;
 import pl.poznan.put.cs.wykop.connection.ConnectionException;
 import pl.poznan.put.cs.wykop.json.JsonException;
 import pl.poznan.put.cs.wykop.model.Link;
-import pl.poznan.put.cs.wykop.model.LinkComment;
 import pl.poznan.put.cs.wykop.service.ConfigManager;
 
 import java.io.IOException;
@@ -22,7 +21,7 @@ public class App {
 //        System.out.println(e.toString());
         Link link = api.getLinkString(2438353);
 //        String usr = api.getProfileString("m__b");
-        System.out.println(link.toString());
+//        System.out.println(link.toString());
 //        System.out.println(usr.toString());
 
     }

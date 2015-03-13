@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="273e1baf-73e5-468b-9019-740767a5ac97" name="Default" comment="Link model Introduction">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/comLink.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/user.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkCommentService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Wykop-Miner.iws" />
@@ -67,24 +64,6 @@
         <option name="myItemId" value="hibernate.cfg.xml" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="wykop.public" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="entry_comment" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="hibernate.cfg.xml" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -92,342 +71,105 @@
     <favorites_list name="Wykop-Miner" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Link.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4230">
-                  <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1184#1185#0" expanded="true" />
-                    <element signature="e#1219#1220#0" expanded="true" />
-                    <element signature="e#1309#1310#0" expanded="true" />
-                    <element signature="e#1357#1358#0" expanded="true" />
-                    <element signature="e#1397#1398#0" expanded="true" />
-                    <element signature="e#1433#1434#0" expanded="true" />
-                    <element signature="e#1528#1529#0" expanded="true" />
-                    <element signature="e#1578#1579#0" expanded="true" />
-                    <element signature="e#1608#1609#0" expanded="true" />
-                    <element signature="e#1634#1635#0" expanded="true" />
-                    <element signature="e#1696#1697#0" expanded="true" />
-                    <element signature="e#1726#1727#0" expanded="true" />
-                    <element signature="e#1757#1758#0" expanded="true" />
-                    <element signature="e#1784#1785#0" expanded="true" />
-                    <element signature="e#1849#1850#0" expanded="true" />
-                    <element signature="e#1881#1882#0" expanded="true" />
-                    <element signature="e#1913#1914#0" expanded="true" />
-                    <element signature="e#1941#1942#0" expanded="true" />
-                    <element signature="e#2009#2010#0" expanded="true" />
-                    <element signature="e#2043#2044#0" expanded="true" />
-                    <element signature="e#2077#2078#0" expanded="true" />
-                    <element signature="e#2107#2108#0" expanded="true" />
-                    <element signature="e#2181#2182#0" expanded="true" />
-                    <element signature="e#2219#2220#0" expanded="true" />
-                    <element signature="e#2255#2256#0" expanded="true" />
-                    <element signature="e#2287#2288#0" expanded="true" />
-                    <element signature="e#2368#2369#0" expanded="true" />
-                    <element signature="e#2410#2411#0" expanded="true" />
-                    <element signature="e#2446#2447#0" expanded="true" />
-                    <element signature="e#2481#2482#0" expanded="true" />
-                    <element signature="e#2569#2570#0" expanded="true" />
-                    <element signature="e#2617#2618#0" expanded="true" />
-                    <element signature="e#2689#2690#0" expanded="true" />
-                    <element signature="e#2723#2724#0" expanded="true" />
-                    <element signature="e#2777#2778#0" expanded="true" />
-                    <element signature="e#2823#2824#0" expanded="true" />
-                    <element signature="e#2850#2851#0" expanded="true" />
-                    <element signature="e#2875#2876#0" expanded="true" />
-                    <element signature="e#2933#2934#0" expanded="true" />
-                    <element signature="e#2961#2962#0" expanded="true" />
-                    <element signature="e#2992#2993#0" expanded="true" />
-                    <element signature="e#3019#3020#0" expanded="true" />
-                    <element signature="e#3085#3086#0" expanded="true" />
-                    <element signature="e#3117#3118#0" expanded="true" />
-                    <element signature="e#3149#3150#0" expanded="true" />
-                    <element signature="e#3177#3178#0" expanded="true" />
-                    <element signature="e#3246#3247#0" expanded="true" />
-                    <element signature="e#3280#3281#0" expanded="true" />
-                    <element signature="e#3318#3319#0" expanded="true" />
-                    <element signature="e#3352#3353#0" expanded="true" />
-                    <element signature="e#3439#3440#0" expanded="true" />
-                    <element signature="e#3485#3486#0" expanded="true" />
-                    <element signature="e#3514#3515#0" expanded="true" />
-                    <element signature="e#3541#3542#0" expanded="true" />
-                    <element signature="e#3705#3706#0" expanded="true" />
-                    <element signature="e#3737#3738#0" expanded="true" />
-                    <element signature="e#3770#3771#0" expanded="true" />
-                    <element signature="e#3799#3800#0" expanded="true" />
-                    <element signature="e#3875#3876#0" expanded="true" />
-                    <element signature="e#3911#3912#0" expanded="true" />
-                    <element signature="e#3944#3945#0" expanded="true" />
-                    <element signature="e#3973#3974#0" expanded="true" />
-                    <element signature="e#4044#4045#0" expanded="true" />
-                    <element signature="e#4080#4081#0" expanded="true" />
-                    <element signature="e#4113#4114#0" expanded="true" />
-                    <element signature="e#4145#4146#0" expanded="true" />
-                    <element signature="e#4224#4225#0" expanded="true" />
-                    <element signature="e#4266#4267#0" expanded="true" />
-                    <element signature="e#4302#4303#0" expanded="true" />
-                    <element signature="e#4337#4338#0" expanded="true" />
-                    <element signature="e#4425#4426#0" expanded="true" />
-                    <element signature="e#4473#4474#0" expanded="true" />
-                    <element signature="e#4505#4506#0" expanded="true" />
-                    <element signature="e#4533#4534#0" expanded="true" />
-                    <element signature="e#4603#4604#0" expanded="true" />
-                    <element signature="e#4637#4638#0" expanded="true" />
-                    <element signature="e#4672#4673#0" expanded="true" />
-                    <element signature="e#4703#4704#0" expanded="true" />
-                    <element signature="e#4751#4752#0" expanded="true" />
-                    <element signature="e#4791#4792#0" expanded="true" />
-                    <element signature="e#4826#4827#0" expanded="true" />
-                    <element signature="e#4860#4861#0" expanded="true" />
-                    <element signature="e#4945#4946#0" expanded="true" />
-                    <element signature="e#4991#4992#0" expanded="true" />
-                    <element signature="e#5021#5022#0" expanded="true" />
-                    <element signature="e#5047#5048#0" expanded="true" />
-                    <element signature="e#5085#5086#0" expanded="true" />
-                    <element signature="e#5115#5116#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="721" max-vertical-offset="1890">
-                  <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LinkComment.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.30247933" vertical-offset="321" max-vertical-offset="3312">
-                  <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#756#757#0" expanded="true" />
-                    <element signature="e#790#791#0" expanded="true" />
-                    <element signature="e#818#819#0" expanded="true" />
-                    <element signature="e#849#850#0" expanded="true" />
-                    <element signature="e#878#879#0" expanded="true" />
-                    <element signature="e#920#921#0" expanded="true" />
-                    <element signature="e#956#957#0" expanded="true" />
-                    <element signature="e#985#986#0" expanded="true" />
-                    <element signature="e#1012#1013#0" expanded="true" />
-                    <element signature="e#1050#1051#0" expanded="true" />
-                    <element signature="e#1082#1083#0" expanded="true" />
-                    <element signature="e#1115#1116#0" expanded="true" />
-                    <element signature="e#1144#1145#0" expanded="true" />
-                    <element signature="e#1188#1189#0" expanded="true" />
-                    <element signature="e#1224#1225#0" expanded="true" />
-                    <element signature="e#1259#1260#0" expanded="true" />
-                    <element signature="e#1293#1294#0" expanded="true" />
-                    <element signature="e#1344#1345#0" expanded="true" />
-                    <element signature="e#1390#1391#0" expanded="true" />
-                    <element signature="e#1426#1427#0" expanded="true" />
-                    <element signature="e#1458#1459#0" expanded="true" />
-                    <element signature="e#1508#1509#0" expanded="true" />
-                    <element signature="e#1550#1551#0" expanded="true" />
-                    <element signature="e#1583#1584#0" expanded="true" />
-                    <element signature="e#1615#1616#0" expanded="true" />
-                    <element signature="e#1662#1663#0" expanded="true" />
-                    <element signature="e#1704#1705#0" expanded="true" />
-                    <element signature="e#1732#1733#0" expanded="true" />
-                    <element signature="e#1759#1760#0" expanded="true" />
-                    <element signature="e#1796#1797#0" expanded="true" />
-                    <element signature="e#1828#1829#0" expanded="true" />
-                    <element signature="e#1857#1858#0" expanded="true" />
-                    <element signature="e#1885#1886#0" expanded="true" />
-                    <element signature="e#1924#1925#0" expanded="true" />
-                    <element signature="e#1958#1959#0" expanded="true" />
-                    <element signature="e#1989#1990#0" expanded="true" />
-                    <element signature="e#2016#2017#0" expanded="true" />
-                    <element signature="e#2056#2057#0" expanded="true" />
-                    <element signature="e#2088#2089#0" expanded="true" />
-                    <element signature="e#2121#2122#0" expanded="true" />
-                    <element signature="e#2152#2153#0" expanded="true" />
-                    <element signature="e#2198#2199#0" expanded="true" />
-                    <element signature="e#2238#2239#0" expanded="true" />
-                    <element signature="e#2271#2272#0" expanded="true" />
-                    <element signature="e#2300#2301#0" expanded="true" />
-                    <element signature="e#2344#2345#0" expanded="true" />
-                    <element signature="e#2380#2381#0" expanded="true" />
-                    <element signature="e#2414#2415#0" expanded="true" />
-                    <element signature="e#2444#2445#0" expanded="true" />
-                    <element signature="e#2491#2492#0" expanded="true" />
-                    <element signature="e#2529#2530#0" expanded="true" />
-                    <element signature="e#2563#2564#0" expanded="true" />
-                    <element signature="e#2593#2594#0" expanded="true" />
-                    <element signature="e#2640#2641#0" expanded="true" />
-                    <element signature="e#2678#2679#0" expanded="true" />
-                    <element signature="e#2709#2710#0" expanded="true" />
-                    <element signature="e#2736#2737#0" expanded="true" />
-                    <element signature="e#2776#2777#0" expanded="true" />
-                    <element signature="e#2808#2809#0" expanded="true" />
-                    <element signature="e#2838#2839#0" expanded="true" />
-                    <element signature="e#2864#2865#0" expanded="true" />
-                    <element signature="e#2902#2903#0" expanded="true" />
-                    <element signature="e#2932#2933#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="3877" max-vertical-offset="4482">
-                  <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1378#1379#0" expanded="true" />
-                    <element signature="e#1413#1414#0" expanded="true" />
-                    <element signature="e#1501#1502#0" expanded="true" />
-                    <element signature="e#1549#1550#0" expanded="true" />
-                    <element signature="e#1583#1584#0" expanded="true" />
-                    <element signature="e#1616#1617#0" expanded="true" />
-                    <element signature="e#1698#1699#0" expanded="true" />
-                    <element signature="e#1742#1743#0" expanded="true" />
-                    <element signature="e#1776#1777#0" expanded="true" />
-                    <element signature="e#1809#1810#0" expanded="true" />
-                    <element signature="e#1887#1888#0" expanded="true" />
-                    <element signature="e#1931#1932#0" expanded="true" />
-                    <element signature="e#1961#1962#0" expanded="true" />
-                    <element signature="e#1987#1988#0" expanded="true" />
-                    <element signature="e#2050#2051#0" expanded="true" />
-                    <element signature="e#2080#2081#0" expanded="true" />
-                    <element signature="e#2110#2111#0" expanded="true" />
-                    <element signature="e#2136#2137#0" expanded="true" />
-                    <element signature="e#2199#2200#0" expanded="true" />
-                    <element signature="e#2229#2230#0" expanded="true" />
-                    <element signature="e#2264#2265#0" expanded="true" />
-                    <element signature="e#2297#2298#0" expanded="true" />
-                    <element signature="e#2380#2381#0" expanded="true" />
-                    <element signature="e#2424#2425#0" expanded="true" />
-                    <element signature="e#2457#2458#0" expanded="true" />
-                    <element signature="e#2489#2490#0" expanded="true" />
-                    <element signature="e#2570#2571#0" expanded="true" />
-                    <element signature="e#2612#2613#0" expanded="true" />
-                    <element signature="e#2651#2652#0" expanded="true" />
-                    <element signature="e#2681#2682#0" expanded="true" />
-                    <element signature="e#2732#2733#0" expanded="true" />
-                    <element signature="e#2770#2771#0" expanded="true" />
-                    <element signature="e#2822#2823#0" expanded="true" />
-                    <element signature="e#2858#2859#0" expanded="true" />
-                    <element signature="e#2928#2929#0" expanded="true" />
-                    <element signature="e#2978#2979#0" expanded="true" />
-                    <element signature="e#3004#3005#0" expanded="true" />
-                    <element signature="e#3029#3030#0" expanded="true" />
-                    <element signature="e#3062#3063#0" expanded="true" />
-                    <element signature="e#3090#3091#0" expanded="true" />
-                    <element signature="e#3122#3123#0" expanded="true" />
-                    <element signature="e#3150#3151#0" expanded="true" />
-                    <element signature="e#3219#3220#0" expanded="true" />
-                    <element signature="e#3253#3254#0" expanded="true" />
-                    <element signature="e#3281#3282#0" expanded="true" />
-                    <element signature="e#3308#3309#0" expanded="true" />
-                    <element signature="e#3371#3372#0" expanded="true" />
-                    <element signature="e#3403#3404#0" expanded="true" />
-                    <element signature="e#3436#3437#0" expanded="true" />
-                    <element signature="e#3468#3469#0" expanded="true" />
-                    <element signature="e#3546#3547#0" expanded="true" />
-                    <element signature="e#3588#3589#0" expanded="true" />
-                    <element signature="e#3621#3622#0" expanded="true" />
-                    <element signature="e#3653#3654#0" expanded="true" />
-                    <element signature="e#3731#3732#0" expanded="true" />
-                    <element signature="e#3773#3774#0" expanded="true" />
-                    <element signature="e#3804#3805#0" expanded="true" />
-                    <element signature="e#3834#3835#0" expanded="true" />
-                    <element signature="e#3906#3907#0" expanded="true" />
-                    <element signature="e#3944#3945#0" expanded="true" />
-                    <element signature="e#3976#3977#0" expanded="true" />
-                    <element signature="e#4007#4008#0" expanded="true" />
-                    <element signature="e#4082#4083#0" expanded="true" />
-                    <element signature="e#4122#4123#0" expanded="true" />
-                    <element signature="e#4161#4162#0" expanded="true" />
-                    <element signature="e#4199#4200#0" expanded="true" />
-                    <element signature="e#4296#4297#0" expanded="true" />
-                    <element signature="e#4350#4351#0" expanded="true" />
-                    <element signature="e#4378#4379#0" expanded="true" />
-                    <element signature="e#4405#4406#0" expanded="true" />
-                    <element signature="e#4469#4470#0" expanded="true" />
-                    <element signature="e#4501#4502#0" expanded="true" />
-                    <element signature="e#4531#4532#0" expanded="true" />
-                    <element signature="e#4560#4561#0" expanded="true" />
-                    <element signature="e#4629#4630#0" expanded="true" />
-                    <element signature="e#4665#4666#0" expanded="true" />
-                    <element signature="e#4703#4704#0" expanded="true" />
-                    <element signature="e#4740#4741#0" expanded="true" />
-                    <element signature="e#4833#4834#0" expanded="true" />
-                    <element signature="e#4885#4886#0" expanded="true" />
-                    <element signature="e#4915#4916#0" expanded="true" />
-                    <element signature="e#4944#4945#0" expanded="true" />
-                    <element signature="e#5013#5014#0" expanded="true" />
-                    <element signature="e#5049#5050#0" expanded="true" />
-                    <element signature="method#toString#0;class#User#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Tag.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="900">
-                  <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="a.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/a.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-74.666664" vertical-offset="216" max-vertical-offset="3006">
-                  <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
-                  <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
-                  <caret line="124" column="21" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="comLink.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/comLink.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.6595042" vertical-offset="2376" max-vertical-offset="210636">
-                  <caret line="9" column="21" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Link.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="889" max-vertical-offset="3348">
+              <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1996#1997#0" expanded="true" />
+                <element signature="e#2027#2028#0" expanded="true" />
+                <element signature="e#2086#2087#0" expanded="true" />
+                <element signature="e#2126#2127#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
+                <element signature="e#2200#2201#0" expanded="true" />
+                <element signature="e#2290#2291#0" expanded="true" />
+                <element signature="e#2338#2339#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="450">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="468">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntryComment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3280" max-vertical-offset="3888">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Embed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="846">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Voter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="828">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkComment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="3546">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8737864" vertical-offset="2784" max-vertical-offset="3492">
+              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+              <folding>
+                <element signature="e#1602#1603#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -453,8 +195,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryCommentVoter.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryVoter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/util/TagManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/util/ReceiverManager.java" />
@@ -475,16 +215,20 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com.json" />
         <option value="$PROJECT_DIR$/src/main/resources/user.json" />
-        <option value="db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" />
         <option value="$PROJECT_DIR$/src/main/resources/comLink.json" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkCommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" />
       </list>
     </option>
   </component>
@@ -511,7 +255,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
+    <option name="x" value="-1327" />
     <option name="y" value="-4" />
     <option name="width" value="1327" />
     <option name="height" value="772" />
@@ -544,6 +288,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -574,6 +319,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -711,36 +468,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jackson" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Wykop-Miner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wykop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -807,7 +534,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -818,7 +544,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;App&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;pom&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;A&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;Ap&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;Entry&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;po&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/pom.xml&#10;selection&#9;ACTION&#9;EditorToggleColumnMode&#10;E&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;en&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;c&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java&#10;Tag&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java&#10;Entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;Ta&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java&#10;e&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;Embe&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java&#10;entry&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;voter&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;hi&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;Ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;hib&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;vo&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;rece&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java&#10;ap&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;App&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;pom&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;A&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;Ap&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;Entry&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;po&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/pom.xml&#10;selection&#9;ACTION&#9;EditorToggleColumnMode&#10;E&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;en&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;c&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java&#10;Tag&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java&#10;Entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;Ta&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java&#10;e&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;Embe&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java&#10;entry&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;voter&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;hi&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;Ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;hib&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;vo&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;rece&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java&#10;ap&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -845,6 +571,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -1349,7 +1078,17 @@
       <workItem from="1425987362649" duration="46000" />
       <workItem from="1426010434864" duration="2228000" />
       <workItem from="1426021358882" duration="4415000" />
-      <workItem from="1426062810934" duration="8570000" />
+      <workItem from="1426062810934" duration="8743000" />
+      <workItem from="1426150319109" duration="496000" />
+      <workItem from="1426153942874" duration="304000" />
+      <workItem from="1426154571602" duration="672000" />
+      <workItem from="1426157846491" duration="2742000" />
+      <workItem from="1426160646633" duration="1106000" />
+      <workItem from="1426162986366" duration="4492000" />
+      <workItem from="1426167676431" duration="1173000" />
+      <workItem from="1426169771477" duration="235000" />
+      <workItem from="1426245915021" duration="3118000" />
+      <workItem from="1426271682991" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="Tag.java  added.">
       <created>1414006728308</created>
@@ -1523,7 +1262,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467538000" />
+    <option name="totallyTimeSpent" value="482064000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1546,40 +1285,41 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="-4" width="1327" height="772" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1327" y="-4" width="1327" height="772" extended-state="6" />
+    <editor active="false" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19135803" sideWeight="0.5003903" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47854078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.49960968" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24824356" sideWeight="0.5149425" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.420765" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24824356" sideWeight="0.48505747" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25604996" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1744713" sideWeight="0.49618322" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41358024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17395833" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47854078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5046296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.49960968" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21784386" sideWeight="0.50374067" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54012346" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24824356" sideWeight="0.4937656" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35227272" sideWeight="0.5007474" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41358024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17395833" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="103" y="208" width="1166" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36574075" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.70987654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1592,7 +1332,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.420765" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25604996" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1744713" sideWeight="0.49618322" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1605,11 +1345,11 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="103" y="208" width="1166" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47854078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5046296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.49960968" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21784386" sideWeight="0.50374067" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54012346" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24824356" sideWeight="0.4937656" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36574075" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.49960968" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24824356" sideWeight="0.5140187" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.70987654" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24824356" sideWeight="0.48598132" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35227272" sideWeight="0.5007474" order="2" side_tool="true" content_ui="tabs" />
@@ -1668,42 +1408,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1152" max-vertical-offset="1728">
-          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="3366">
-          <caret line="256" column="5" selection-start-line="256" selection-start-column="5" selection-end-line="256" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/wykop.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="144">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="864">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1008" max-vertical-offset="4014">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="720">
@@ -1907,13 +1611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -1938,25 +1635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20224719" vertical-offset="0" max-vertical-offset="445">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40449437" vertical-offset="630" max-vertical-offset="3528">
           <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="882">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -2002,21 +1684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="864">
-          <caret line="26" column="48" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="468">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/SessionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
@@ -2028,7 +1695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18446602" vertical-offset="174" max-vertical-offset="792">
           <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2043,23 +1709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23225807" vertical-offset="0" max-vertical-offset="930">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="756">
-          <caret line="29" column="79" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22689076" vertical-offset="0" max-vertical-offset="342">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2067,337 +1716,302 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6247934" vertical-offset="0" max-vertical-offset="720">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="721" max-vertical-offset="1890">
-          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3877" max-vertical-offset="4482">
-          <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1413#1414#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
-            <element signature="e#1698#1699#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1809#1810#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1961#1962#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
-            <element signature="e#2199#2200#0" expanded="true" />
-            <element signature="e#2229#2230#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
-            <element signature="e#2489#2490#0" expanded="true" />
-            <element signature="e#2570#2571#0" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2651#2652#0" expanded="true" />
-            <element signature="e#2681#2682#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2770#2771#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2858#2859#0" expanded="true" />
-            <element signature="e#2928#2929#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3004#3005#0" expanded="true" />
-            <element signature="e#3029#3030#0" expanded="true" />
-            <element signature="e#3062#3063#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
-            <element signature="e#3122#3123#0" expanded="true" />
-            <element signature="e#3150#3151#0" expanded="true" />
-            <element signature="e#3219#3220#0" expanded="true" />
-            <element signature="e#3253#3254#0" expanded="true" />
-            <element signature="e#3281#3282#0" expanded="true" />
-            <element signature="e#3308#3309#0" expanded="true" />
-            <element signature="e#3371#3372#0" expanded="true" />
-            <element signature="e#3403#3404#0" expanded="true" />
-            <element signature="e#3436#3437#0" expanded="true" />
-            <element signature="e#3468#3469#0" expanded="true" />
-            <element signature="e#3546#3547#0" expanded="true" />
-            <element signature="e#3588#3589#0" expanded="true" />
-            <element signature="e#3621#3622#0" expanded="true" />
-            <element signature="e#3653#3654#0" expanded="true" />
-            <element signature="e#3731#3732#0" expanded="true" />
-            <element signature="e#3773#3774#0" expanded="true" />
-            <element signature="e#3804#3805#0" expanded="true" />
-            <element signature="e#3834#3835#0" expanded="true" />
-            <element signature="e#3906#3907#0" expanded="true" />
-            <element signature="e#3944#3945#0" expanded="true" />
-            <element signature="e#3976#3977#0" expanded="true" />
-            <element signature="e#4007#4008#0" expanded="true" />
-            <element signature="e#4082#4083#0" expanded="true" />
-            <element signature="e#4122#4123#0" expanded="true" />
-            <element signature="e#4161#4162#0" expanded="true" />
-            <element signature="e#4199#4200#0" expanded="true" />
-            <element signature="e#4296#4297#0" expanded="true" />
-            <element signature="e#4350#4351#0" expanded="true" />
-            <element signature="e#4378#4379#0" expanded="true" />
-            <element signature="e#4405#4406#0" expanded="true" />
-            <element signature="e#4469#4470#0" expanded="true" />
-            <element signature="e#4501#4502#0" expanded="true" />
-            <element signature="e#4531#4532#0" expanded="true" />
-            <element signature="e#4560#4561#0" expanded="true" />
-            <element signature="e#4629#4630#0" expanded="true" />
-            <element signature="e#4665#4666#0" expanded="true" />
-            <element signature="e#4703#4704#0" expanded="true" />
-            <element signature="e#4740#4741#0" expanded="true" />
-            <element signature="e#4833#4834#0" expanded="true" />
-            <element signature="e#4885#4886#0" expanded="true" />
-            <element signature="e#4915#4916#0" expanded="true" />
-            <element signature="e#4944#4945#0" expanded="true" />
-            <element signature="e#5013#5014#0" expanded="true" />
-            <element signature="e#5049#5050#0" expanded="true" />
-            <element signature="method#toString#0;class#User#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="900">
+        <state vertical-scroll-proportion="0.79173553" vertical-offset="277" max-vertical-offset="900">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/a.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4878893" vertical-offset="216" max-vertical-offset="3006">
+          <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
+          <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+          <caret line="124" column="21" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="1908">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="666">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <caret line="29" column="79" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1360" max-vertical-offset="12870">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52427185" vertical-offset="0" max-vertical-offset="618">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89752066" vertical-offset="3093" max-vertical-offset="3816">
+        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="3816">
           <caret line="288" column="20" selection-start-line="288" selection-start-column="20" selection-end-line="288" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry_comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/3256e03b/hibernate.cfg.xml/jackson/hibernate/Hibernate/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/3256e03b/hibernate.cfg.xml/jackson/hibernate/Hibernate/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="" y="">Entry#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java</node>
+            <node x="" y="">Voter#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java</node>
+            <node x="" y="">Tag#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java</node>
+            <node x="" y="">EntryComment#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java</node>
+            <node x="" y="">Receiver#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java</node>
+            <node x="" y="">Embed#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6641618497109826" x="1178.0" y="357.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Embeddables</Category>
+            <Category>Properties</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79173553" vertical-offset="3265" max-vertical-offset="3888">
-          <caret line="282" column="4" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="3888">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4230">
-          <caret line="226" column="0" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
-            <element signature="e#1941#1942#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-            <element signature="e#2043#2044#0" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2107#2108#0" expanded="true" />
-            <element signature="e#2181#2182#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-            <element signature="e#2255#2256#0" expanded="true" />
-            <element signature="e#2287#2288#0" expanded="true" />
-            <element signature="e#2368#2369#0" expanded="true" />
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-            <element signature="e#2481#2482#0" expanded="true" />
-            <element signature="e#2569#2570#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
-            <element signature="e#2723#2724#0" expanded="true" />
-            <element signature="e#2777#2778#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2850#2851#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2933#2934#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#2992#2993#0" expanded="true" />
-            <element signature="e#3019#3020#0" expanded="true" />
-            <element signature="e#3085#3086#0" expanded="true" />
-            <element signature="e#3117#3118#0" expanded="true" />
-            <element signature="e#3149#3150#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-            <element signature="e#3246#3247#0" expanded="true" />
-            <element signature="e#3280#3281#0" expanded="true" />
-            <element signature="e#3318#3319#0" expanded="true" />
-            <element signature="e#3352#3353#0" expanded="true" />
-            <element signature="e#3439#3440#0" expanded="true" />
-            <element signature="e#3485#3486#0" expanded="true" />
-            <element signature="e#3514#3515#0" expanded="true" />
-            <element signature="e#3541#3542#0" expanded="true" />
-            <element signature="e#3705#3706#0" expanded="true" />
-            <element signature="e#3737#3738#0" expanded="true" />
-            <element signature="e#3770#3771#0" expanded="true" />
-            <element signature="e#3799#3800#0" expanded="true" />
-            <element signature="e#3875#3876#0" expanded="true" />
-            <element signature="e#3911#3912#0" expanded="true" />
-            <element signature="e#3944#3945#0" expanded="true" />
-            <element signature="e#3973#3974#0" expanded="true" />
-            <element signature="e#4044#4045#0" expanded="true" />
-            <element signature="e#4080#4081#0" expanded="true" />
-            <element signature="e#4113#4114#0" expanded="true" />
-            <element signature="e#4145#4146#0" expanded="true" />
-            <element signature="e#4224#4225#0" expanded="true" />
-            <element signature="e#4266#4267#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
-            <element signature="e#4337#4338#0" expanded="true" />
-            <element signature="e#4425#4426#0" expanded="true" />
-            <element signature="e#4473#4474#0" expanded="true" />
-            <element signature="e#4505#4506#0" expanded="true" />
-            <element signature="e#4533#4534#0" expanded="true" />
-            <element signature="e#4603#4604#0" expanded="true" />
-            <element signature="e#4637#4638#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
-            <element signature="e#4703#4704#0" expanded="true" />
-            <element signature="e#4751#4752#0" expanded="true" />
-            <element signature="e#4791#4792#0" expanded="true" />
-            <element signature="e#4826#4827#0" expanded="true" />
-            <element signature="e#4860#4861#0" expanded="true" />
-            <element signature="e#4945#4946#0" expanded="true" />
-            <element signature="e#4991#4992#0" expanded="true" />
-            <element signature="e#5021#5022#0" expanded="true" />
-            <element signature="e#5047#5048#0" expanded="true" />
-            <element signature="e#5085#5086#0" expanded="true" />
-            <element signature="e#5115#5116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/a.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-74.666664" vertical-offset="216" max-vertical-offset="3006">
-          <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
-          <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
-          <caret line="124" column="21" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="846">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="864">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="126">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/comLink.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6595042" vertical-offset="2376" max-vertical-offset="210636">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="210636">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="828">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="889" max-vertical-offset="3348">
+          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1996#1997#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+            <element signature="e#2338#2339#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30247933" vertical-offset="321" max-vertical-offset="3312">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="172" max-vertical-offset="3546">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-            <element signature="e#1662#1663#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
-            <element signature="e#1796#1797#0" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1857#1858#0" expanded="true" />
-            <element signature="e#1885#1886#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2016#2017#0" expanded="true" />
-            <element signature="e#2056#2057#0" expanded="true" />
-            <element signature="e#2088#2089#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-            <element signature="e#2152#2153#0" expanded="true" />
-            <element signature="e#2198#2199#0" expanded="true" />
-            <element signature="e#2238#2239#0" expanded="true" />
-            <element signature="e#2271#2272#0" expanded="true" />
-            <element signature="e#2300#2301#0" expanded="true" />
-            <element signature="e#2344#2345#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2414#2415#0" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2491#2492#0" expanded="true" />
-            <element signature="e#2529#2530#0" expanded="true" />
-            <element signature="e#2563#2564#0" expanded="true" />
-            <element signature="e#2593#2594#0" expanded="true" />
-            <element signature="e#2640#2641#0" expanded="true" />
-            <element signature="e#2678#2679#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
-            <element signature="e#2736#2737#0" expanded="true" />
-            <element signature="e#2776#2777#0" expanded="true" />
-            <element signature="e#2808#2809#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2864#2865#0" expanded="true" />
-            <element signature="e#2902#2903#0" expanded="true" />
-            <element signature="e#2932#2933#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8737864" vertical-offset="2784" max-vertical-offset="3456">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding>
+            <element signature="e#1602#1603#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jackson</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

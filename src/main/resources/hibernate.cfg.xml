@@ -1,43 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+        <!DOCTYPE hibernate-configuration PUBLIC
+                "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <session-factory>
-        <!-- Database connection settings -->
-        <property login="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
-        <property login="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property login="hibernate.connection.username">postgres</property>
-        <property login="hibernate.connection.password"></property>
-        <property login="hibernate.connection.url">jdbc:postgresql://localhost:5432/wykop</property>
+<session-factory>
+    <!-- Database connection settings -->
+    <property login="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
+    <property login="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property login="hibernate.connection.username">postgres</property>
+    <property login="hibernate.connection.password"></property>
+    <property login="hibernate.connection.url">jdbc:postgresql://localhost:5432/wykop</property>
 
-        <!-- JDBC connection pool (use the built-in) -->
-        <property login="connection.pool_size">10</property>
+    <!-- JDBC connection pool (use the built-in) -->
+    <property login="connection.pool_size">10</property>
 
-        <!-- SQL dialect -->
-        <property login="dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
+    <!-- SQL dialect -->
+    <property login="dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
 
-        <!-- Enable Hibernate's automatic session context management -->
-        <property login="current_session_context_class">thread</property>
+    <!-- Enable Hibernate's automatic session context management -->
+    <property login="current_session_context_class">thread</property>
 
-        <!-- Disable the second-level cache  -->
-        <property login="cache.provider_class">org.hibernate.cache.internal.NoCachingRegionFactory</property>
+    <!-- Disable the second-level cache  -->
+    <property login="cache.provider_class">org.hibernate.cache.internal.NoCachingRegionFactory</property>
 
-        <!-- Echo all executed SQL to stdout -->
-        <property login="show_sql">false</property>
-
-
-        <property login="hbm2ddl.auto">validate</property>
-
-        <mapping class="pl.poznan.put.cs.wykop.model.Entry"/>
-        <mapping class="pl.poznan.put.cs.wykop.model.EntryComment"/>
-        <mapping class="pl.poznan.put.cs.wykop.model.Tag"/>
-        <mapping class="pl.poznan.put.cs.wykop.model.Receiver"/>
-        <mapping class="pl.poznan.put.cs.wykop.model.Voter"/>
-        <mapping class="pl.poznan.put.cs.wykop.model.Embed"/>
+    <!-- Echo all executed SQL to stdout -->
+    <property login="show_sql">false</property>
 
 
+    <property login="hbm2ddl.auto">validate</property>
 
-    </session-factory>
+    <mapping class="pl.poznan.put.cs.wykop.model.Entry"/>
+    <mapping class="pl.poznan.put.cs.wykop.model.EntryComment"/>
+    <mapping class="pl.poznan.put.cs.wykop.model.Tag"/>
+    <mapping class="pl.poznan.put.cs.wykop.model.Receiver"/>
+    <mapping class="pl.poznan.put.cs.wykop.model.Voter"/>
+    <mapping class="pl.poznan.put.cs.wykop.model.Embed"/>
+
+
+
+</session-factory>
 </hibernate-configuration>
