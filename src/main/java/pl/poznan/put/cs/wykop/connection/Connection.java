@@ -53,7 +53,6 @@ public class Connection {
                 throw new ConnectionException("Status code != 200.");
             }
             String res = IOUtils.toString(resp.getEntity().getContent(), "utf-8");
-            System.out.println(res);
             if (res.startsWith("{\"error\":{\"code\":")) {
                 String msg = JSON.readErrorMsg(res);
 

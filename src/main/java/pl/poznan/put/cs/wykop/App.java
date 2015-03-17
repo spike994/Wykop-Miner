@@ -11,8 +11,10 @@ import pl.poznan.put.cs.wykop.connection.ConnectionException;
 import pl.poznan.put.cs.wykop.connection.WykopException;
 import pl.poznan.put.cs.wykop.json.JsonException;
 import pl.poznan.put.cs.wykop.model.Entry;
+import pl.poznan.put.cs.wykop.model.Link;
 import pl.poznan.put.cs.wykop.service.ConfigManager;
 import pl.poznan.put.cs.wykop.service.EntryService;
+import pl.poznan.put.cs.wykop.service.LinkService;
 import pl.poznan.put.cs.wykop.service.SessionManager;
 
 import java.io.BufferedReader;
@@ -34,21 +36,21 @@ public class App {
         api.setHourLimit(h);
         Transaction transaction;
         Criteria criteria = session
-                .createCriteria(Entry.class)
+                .createCriteria(Link.class)
                 .setProjection(Projections.min("id"));
-        long lastEntry = (Long) criteria.uniqueResult();
-        List<Integer> ids= getMissedEntries("ConnectionExceptionLog.txt");
-        for (Integer arg : ids) {
+//        long lastLink = (Long) criteria.uniqueResult();
+        for (int i = 2447553; i>0 ; i--) {
             transaction = session.beginTransaction();
             try {
-                Entry entry = api.getEntryString(arg);
-                EntryService.save(entry, session);
+                Link link = api.getLinkString(i);
+                LinkService.save(link, session);
+
                 transaction.commit();
-                System.out.println(entry.getId());
+                System.out.println(link.getId());
             } catch (WykopException e) {
                 transaction.rollback();
             } catch (ConnectionException e) {
-                FileUtils.writeStringToFile(new File("LinkConnExcLog.txt"), arg + "\n", true);
+                FileUtils.writeStringToFile(new File("LinkConnExcLog.txt"), i + "\n", true);
                 transaction.rollback();
             } catch (ConstraintViolationException e) {
                 System.out.println("Constraint Violation Exception");
@@ -58,21 +60,7 @@ public class App {
         session.close();
     }
 
-    public static List<Integer> getMissedEntries(String path) throws IOException {
-        String line = null;
-        List<Integer> result = new ArrayList<Integer>();
-        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            while ((line = br.readLine())!=null) {
-                try {
-                    Integer dupa = Integer.parseInt(line.trim());
-                    result.add(dupa);
-                }catch (NumberFormatException e){
-//                    System.out.println("To nie liczba");
-                }
-            }
-            return result;
-        }
-    }
+
 }
 
 

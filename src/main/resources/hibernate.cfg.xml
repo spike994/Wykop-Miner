@@ -38,7 +38,7 @@
     <mapping class="pl.poznan.put.cs.wykop.model.Embed"/>
     <mapping class="pl.poznan.put.cs.wykop.model.Link"/>
     <mapping class="pl.poznan.put.cs.wykop.model.LinkComment"/>
-    <mapping class="pl.poznan.put.cs.wykop.model.User"/>
+    <!--<mapping class="pl.poznan.put.cs.wykop.model.User"/>-->
 
 
 

@@ -25,5 +25,6 @@ public class TagDAO {
             session.save(tag);
         }
         return tag;
+
     }
 }

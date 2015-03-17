@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import pl.poznan.put.cs.wykop.dao.ReceiverDAO;
 import pl.poznan.put.cs.wykop.dao.TagDAO;
 
-import javax.persistence.Column;
-import java.sql.Date;
+import javax.persistence.*;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,8 +14,11 @@ import java.util.regex.Pattern;
 /**
  * Created by dk994 on 12.03.15.
  */
+@Entity
+@Table(name = "link_comment")
 @JsonIgnoreProperties({"author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo"})
 public class LinkComment {
+    @Id
     @Column(name = "id")
     private long id;
     @Column(name = "link_id")
@@ -25,15 +28,15 @@ public class LinkComment {
     @Column(name = "author")
     private String author;
     @Column(name = "author_group")
-    private int authorGroup;
+    private long authorGroup;
     @Column(name = "author_sex")
     private String authorSex;
     @Column(name = "vote_count")
-    private int voteCount;
+    private long voteCount;
     @Column(name = "plus")
-    private int plus;
+    private long plus;
     @Column(name = "minus")
-    private int minus;
+    private long minus;
     @Column(name = "body")
     private String body;
     @Column(name = "parent_id")
@@ -48,26 +51,29 @@ public class LinkComment {
     private String type;
     @Column(name = "app")
     private String app;
-    @Column(name = "tags")
-    private HashSet<Tag> tags;
-    @Column(name = "receivers")
-    private HashSet<Receiver> receivers;
+//    @Column(name = "tags")
+//    private HashSet<Tag> tags;
+//    @Column(name = "receivers")
+//    private HashSet<Receiver> receivers;
+    @ManyToOne
+    @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
+    private Link link;
 
-    public HashSet<Tag> getTags() {
-        return tags;
-    }
-
-    public void setTags(HashSet<Tag> tags) {
-        this.tags = tags;
-    }
-
-    public HashSet<Receiver> getReceivers() {
-        return receivers;
-    }
-
-    public void setReceivers(HashSet<Receiver> receivers) {
-        this.receivers = receivers;
-    }
+//    public HashSet<Tag> getTags() {
+//        return tags;
+//    }
+//
+//    public void setTags(HashSet<Tag> tags) {
+//        this.tags = tags;
+//    }
+//
+//    public HashSet<Receiver> getReceivers() {
+//        return receivers;
+//    }
+//
+//    public void setReceivers(HashSet<Receiver> receivers) {
+//        this.receivers = receivers;
+//    }
 
     public long getId() {
         return id;
@@ -104,12 +110,12 @@ public class LinkComment {
         this.author = author;
     }
 
-    public int getAuthorGroup() {
+    public long getAuthorGroup() {
         return authorGroup;
     }
 
     @JsonProperty("author_group")
-    public void setAuthorGroup(int authorGroup) {
+    public void setAuthorGroup(long authorGroup) {
         this.authorGroup = authorGroup;
     }
 
@@ -122,30 +128,30 @@ public class LinkComment {
         this.authorSex = authorSex;
     }
 
-    public int getVoteCount() {
+    public long getVoteCount() {
         return voteCount;
     }
 
     @JsonProperty("vote_count")
-    public void setVoteCount(int voteCount) {
+    public void setVoteCount(long voteCount) {
         this.voteCount = voteCount;
     }
 
-    public int getPlus() {
+    public long getPlus() {
         return plus;
     }
 
     @JsonProperty("vote_count_plus")
-    public void setPlus(int plus) {
+    public void setPlus(long plus) {
         this.plus = plus;
     }
 
-    public int getMinus() {
+    public long getMinus() {
         return minus;
     }
 
     @JsonProperty("vote_count_minus")
-    public void setMinus(int minus) {
+    public void setMinus(long minus) {
         this.minus = minus;
     }
 
@@ -212,32 +218,32 @@ public class LinkComment {
         this.app = app;
     }
 
-    public void inflateTags(TagDAO tagDAO) {
-        Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
-        Matcher matcher = pattern.matcher(this.body);
-        tags = new HashSet<Tag>();
-        while (matcher.find()) {
-            String name = matcher.group();
-            Tag tag = tagDAO.getTag(name);
-            tags.add(tag);
-        }
-    }
+//    public void inflateTags(TagDAO tagDAO) {
+//        Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
+//        Matcher matcher = pattern.matcher(this.body);
+//        tags = new HashSet<Tag>();
+//        while (matcher.find()) {
+//            String name = matcher.group();
+//            Tag tag = tagDAO.getTag(name);
+//            tags.add(tag);
+//        }
+//    }
+//
+//    public void inflateReceivers(ReceiverDAO receiverDAO) {
+//        Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
+//        Matcher matcher = pattern.matcher(this.body);
+//        receivers = new HashSet<Receiver>();
+//        while (matcher.find()) {
+//            String name = matcher.group();
+//            Receiver receiver = receiverDAO.getReceiver(name);
+//            receivers.add(receiver);
+//        }
+//    }
 
-    public void inflateReceivers(ReceiverDAO receiverDAO) {
-        Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
-        Matcher matcher = pattern.matcher(this.body);
-        receivers = new HashSet<Receiver>();
-        while (matcher.find()) {
-            String name = matcher.group();
-            Receiver receiver = receiverDAO.getReceiver(name);
-            receivers.add(receiver);
-        }
-    }
-
-    public void hydrate(TagDAO tagDAO, ReceiverDAO receiverDAO) {
-        this.inflateTags(tagDAO);
-        this.inflateReceivers(receiverDAO);
-    }
+//    public void hydrate(TagDAO tagDAO, ReceiverDAO receiverDAO) {
+//        this.inflateTags(tagDAO);
+//        this.inflateReceivers(receiverDAO);
+//    }
 
     @Override
     public String toString() {

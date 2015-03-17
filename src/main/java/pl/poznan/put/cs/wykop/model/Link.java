@@ -3,11 +3,15 @@ package pl.poznan.put.cs.wykop.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import pl.poznan.put.cs.wykop.dao.TagDAO;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import java.sql.Date;
+import javax.persistence.*;
+import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by dk994 on 23.02.15.
@@ -16,7 +20,9 @@ import java.util.List;
         "is_hot", "violation_url", "info", "own_content",
 })
 @Entity
+@Table(name = "link")
 public class Link {
+    @Id
     @Column(name = "id")
     private long id;
     @Column(name = "title")
@@ -32,11 +38,11 @@ public class Link {
     @Column(name = "author")
     private String author;
     @Column(name = "vote_count")
-    private int voteCount;
-    @Column(name = "vote")
-    private int commentCount;
+    private long voteCount;
+    @Column(name = "comment_count")
+    private long commentCount;
     @Column(name = "related_count")
-    private int relatedCount;
+    private long relatedCount;
     @Column(name = "author_group")
     private String authorGroup;
     @Column(name = "adult")
@@ -46,22 +52,28 @@ public class Link {
     @Column(name = "category")
     private String category;
     @Column(name = "report_count")
-    private int reportCount;
+    private long reportCount;
     @Column(name = "author_sex")
     private String authorSex;
     @Column(name = "type")
     private String type;
-    @Column(name = "group")
+    @Column(name = "group_name")
     private String group;
     @Column(name = "preview")
     private String preview;
-    @Column(name = "has_own_content]")
+    @Column(name = "has_own_content")
     private boolean hasOwnContent;
     @Column(name = "category_name")
     private String categoryName;
     @Column(name = "app")
     private String app;
+    @OneToMany(mappedBy = "link", cascade = CascadeType.ALL)
     private List<LinkComment> comments;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="link_tag",
+            joinColumns={@JoinColumn(name="link_id")},
+            inverseJoinColumns={@JoinColumn(name="tag_id")})
+    private Set<Tag> tagList;
 
     public List<LinkComment> getComments() {
         return comments;
@@ -127,12 +139,12 @@ public class Link {
         this.authorSex = authorSex;
     }
 
-    public int getRelatedCount() {
+    public long getRelatedCount() {
         return relatedCount;
     }
 
     @JsonProperty("related_count")
-    public void setRelatedCount(int relatedCount) {
+    public void setRelatedCount(long relatedCount) {
         this.relatedCount = relatedCount;
     }
 
@@ -208,21 +220,21 @@ public class Link {
         this.author = author;
     }
 
-    public int getVoteCount() {
+    public long getVoteCount() {
         return voteCount;
     }
 
     @JsonProperty("vote_count")
-    public void setVoteCount(int voteCount) {
+    public void setVoteCount(long voteCount) {
         this.voteCount = voteCount;
     }
 
-    public int getCommentCount() {
+    public long getCommentCount() {
         return commentCount;
     }
 
     @JsonProperty("comment_count")
-    public void setCommentCount(int commentCount) {
+    public void setCommentCount(long commentCount) {
         this.commentCount = commentCount;
     }
 
@@ -242,12 +254,12 @@ public class Link {
         this.category = category;
     }
 
-    public int getReportCount() {
+    public long getReportCount() {
         return reportCount;
     }
 
     @JsonProperty("report_count")
-    public void setReportCount(int reportCount) {
+    public void setReportCount(long reportCount) {
         this.reportCount = reportCount;
     }
 
@@ -259,6 +271,19 @@ public class Link {
         this.url = url;
     }
 
+
+    public void inflateTags(TagDAO tagDAO){
+        Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
+        Matcher matcher = pattern.matcher(tags);
+        tagList = new HashSet<Tag>();
+        while(matcher.find())
+        {
+            String name = matcher.group();
+            Tag tag = tagDAO.getTag(name);
+            tagList.add(tag);
+            tag.setName(matcher.group());
+        }
+    }
 
 
 }
