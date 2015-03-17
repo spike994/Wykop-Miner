@@ -1,0 +1,2141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="273e1baf-73e5-468b-9019-740767a5ac97" name="Default" comment="Link model Introduction">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jackson.iml" afterPath="$PROJECT_DIR$/jackson.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="Wykop-Miner.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hibernate.cfg.xml" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="wykop.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hibernate.cfg.xml" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="wykop.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="link" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hibernate.cfg.xml" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="wykop.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="entry_comment" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hibernate.cfg.xml" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="wykop.public" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="entry" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hibernate.cfg.xml" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Wykop-Miner" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Link.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="961" max-vertical-offset="3726">
+              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2444#2445#0" expanded="true" />
+                <element signature="e#2475#2476#0" expanded="true" />
+                <element signature="e#2534#2535#0" expanded="true" />
+                <element signature="e#2574#2575#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3039" max-vertical-offset="4032">
+              <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51968503" vertical-offset="252" max-vertical-offset="900">
+              <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="1116">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#703#704#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.566667" vertical-offset="631" max-vertical-offset="1206">
+              <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1890">
+              <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3528">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="spike994" />
+        <option value="Dawid Kłos" />
+        <option value="D" />
+        <option value="dk994" />
+      </list>
+    </option>
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryCommentVoter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryVoter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/util/TagManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/util/ReceiverManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/ReceiverManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/TagDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/dao/ReceiverManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/dao/ReceiverDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryCommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="db-console:/b59bd2ca/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/SessionManager.java" />
+        <option value="db-console:/48957000/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/user.json" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/comLink.json" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkCommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" />
+        <option value="$PROJECT_DIR$/ConnectionExceptionLog.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/util/HibernateUtil.java" />
+        <option value="dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.link" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java" />
+        <option value="dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry_tag" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/dao/TagDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java" />
+        <option value="db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="39" />
+    <option name="y" value="-4" />
+    <option name="width" value="1327" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wykop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wykop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wykop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wykop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wykop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jackson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wykop-Miner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wykop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="po&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;Con&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java&#10;ap&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;App&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;LinkC&#9;PSI&#9;JAVA://pl.poznan.put.cs.wykop.model.LinkComment&#10;link&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Link.java&#10;en&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;app&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;pom&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;A&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;Ap&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;Entry&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;selection&#9;ACTION&#9;EditorToggleColumnMode&#10;E&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;c&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java&#10;Tag&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java&#10;Entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;Ta&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java&#10;e&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;Embe&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java&#10;entry&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;voter&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;hi&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;Ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;hib&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;vo&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;rece&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.lastSelected" value="preferences.lookFeel" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="78" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="102" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="108" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="993" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="80" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="99" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="107" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="995" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="pl.poznan.put.cs.wykop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="pl.poznan.put.cs.wykop.App" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="jackson" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <envMap />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.App" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" text="sessionManager" recursive="true" caseInsensitive="true" type="JAVA" history="1" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="273e1baf-73e5-468b-9019-740767a5ac97" name="Default" comment="" />
+      <created>1413914769176</created>
+      <option name="number" value="Default" />
+      <updated>1413914769176</updated>
+      <workItem from="1413914768385" duration="354000" />
+      <workItem from="1413926497528" duration="4983000" />
+      <workItem from="1413987777839" duration="227000" />
+      <workItem from="1414005308344" duration="1021000" />
+      <workItem from="1414023518211" duration="11000" />
+      <workItem from="1414220341187" duration="3341000" />
+      <workItem from="1414312801890" duration="4586000" />
+      <workItem from="1414342427191" duration="4563000" />
+      <workItem from="1414778908754" duration="777000" />
+      <workItem from="1414868403743" duration="2717000" />
+      <workItem from="1414956127436" duration="711000" />
+      <workItem from="1415044559718" duration="760000" />
+      <workItem from="1415046618688" duration="2648000" />
+      <workItem from="1415117042496" duration="631000" />
+      <workItem from="1415122801451" duration="1808000" />
+      <workItem from="1415134115898" duration="5145000" />
+      <workItem from="1415369822903" duration="38000" />
+      <workItem from="1415442865021" duration="29785000" />
+      <workItem from="1415578990127" duration="2188000" />
+      <workItem from="1415606015678" duration="9804000" />
+      <workItem from="1415619028184" duration="183000" />
+      <workItem from="1415713209012" duration="1319000" />
+      <workItem from="1416075940549" duration="2158000" />
+      <workItem from="1416081612747" duration="4893000" />
+      <workItem from="1416160469349" duration="2020000" />
+      <workItem from="1416165290407" duration="253000" />
+      <workItem from="1416243641286" duration="742000" />
+      <workItem from="1416255375785" duration="1208000" />
+      <workItem from="1416329309729" duration="1114000" />
+      <workItem from="1416334164868" duration="14000" />
+      <workItem from="1416337436572" duration="308000" />
+      <workItem from="1416337922347" duration="657000" />
+      <workItem from="1416349654471" duration="615000" />
+      <workItem from="1416417999513" duration="2248000" />
+      <workItem from="1416467203290" duration="1238000" />
+      <workItem from="1416470977003" duration="1287000" />
+      <workItem from="1416479890155" duration="4274000" />
+      <workItem from="1416487870460" duration="118000" />
+      <workItem from="1416492933374" duration="2904000" />
+      <workItem from="1416514531065" duration="1594000" />
+      <workItem from="1416519053878" duration="913000" />
+      <workItem from="1416520975110" duration="414000" />
+      <workItem from="1416641590800" duration="3979000" />
+      <workItem from="1416739506958" duration="102000" />
+      <workItem from="1416852443911" duration="13821000" />
+      <workItem from="1417026582981" duration="1662000" />
+      <workItem from="1417111583960" duration="10359000" />
+      <workItem from="1417247601112" duration="37276000" />
+      <workItem from="1417292340329" duration="547000" />
+      <workItem from="1417356428976" duration="1802000" />
+      <workItem from="1417452581705" duration="2619000" />
+      <workItem from="1417557072662" duration="4995000" />
+      <workItem from="1417594744581" duration="6663000" />
+      <workItem from="1417639383291" duration="5572000" />
+      <workItem from="1417676798100" duration="7011000" />
+      <workItem from="1417686132998" duration="775000" />
+      <workItem from="1417687884399" duration="434000" />
+      <workItem from="1417717307673" duration="9610000" />
+      <workItem from="1417729529997" duration="14168000" />
+      <workItem from="1417782875750" duration="737000" />
+      <workItem from="1417797496810" duration="28919000" />
+      <workItem from="1417975617907" duration="24664000" />
+      <workItem from="1418213403929" duration="92000" />
+      <workItem from="1418234487449" duration="4440000" />
+      <workItem from="1418309377297" duration="1192000" />
+      <workItem from="1418339699314" duration="753000" />
+      <workItem from="1418360349399" duration="6817000" />
+      <workItem from="1418551720630" duration="1495000" />
+      <workItem from="1418579428471" duration="603000" />
+      <workItem from="1418588999829" duration="3406000" />
+      <workItem from="1418626431856" duration="734000" />
+      <workItem from="1418635693979" duration="38000" />
+      <workItem from="1418635750358" duration="132000" />
+      <workItem from="1418635899008" duration="617000" />
+      <workItem from="1418636848853" duration="183000" />
+      <workItem from="1418639133494" duration="68000" />
+      <workItem from="1418650065550" duration="618000" />
+      <workItem from="1418678978356" duration="354000" />
+      <workItem from="1418679366126" duration="4055000" />
+      <workItem from="1418861503248" duration="364000" />
+      <workItem from="1418917831891" duration="605000" />
+      <workItem from="1418918769464" duration="1320000" />
+      <workItem from="1418932075475" duration="2013000" />
+      <workItem from="1418935735755" duration="12802000" />
+      <workItem from="1419083403792" duration="1337000" />
+      <workItem from="1419084990401" duration="1231000" />
+      <workItem from="1419093559163" duration="5215000" />
+      <workItem from="1419128547966" duration="1793000" />
+      <workItem from="1419154430023" duration="1260000" />
+      <workItem from="1419158031099" duration="3507000" />
+      <workItem from="1419211928774" duration="4775000" />
+      <workItem from="1419430850137" duration="631000" />
+      <workItem from="1419511726657" duration="1866000" />
+      <workItem from="1419524803159" duration="2493000" />
+      <workItem from="1419613327120" duration="1215000" />
+      <workItem from="1419671106902" duration="31000" />
+      <workItem from="1419711738693" duration="3711000" />
+      <workItem from="1419770600795" duration="3855000" />
+      <workItem from="1419842741328" duration="3759000" />
+      <workItem from="1419933182093" duration="3753000" />
+      <workItem from="1420013778116" duration="3204000" />
+      <workItem from="1420134013368" duration="2494000" />
+      <workItem from="1420187822989" duration="2855000" />
+      <workItem from="1420194847064" duration="4981000" />
+      <workItem from="1420289823950" duration="5879000" />
+      <workItem from="1420362748773" duration="5346000" />
+      <workItem from="1420458714370" duration="16000" />
+      <workItem from="1420555637450" duration="22000" />
+      <workItem from="1420586671648" duration="1832000" />
+      <workItem from="1420695120799" duration="1226000" />
+      <workItem from="1420846848780" duration="865000" />
+      <workItem from="1420943111375" duration="622000" />
+      <workItem from="1421019053925" duration="978000" />
+      <workItem from="1421238475454" duration="620000" />
+      <workItem from="1421431315889" duration="600000" />
+      <workItem from="1421445882647" duration="3000" />
+      <workItem from="1421645173926" duration="506000" />
+      <workItem from="1422006944970" duration="1579000" />
+      <workItem from="1422095671389" duration="656000" />
+      <workItem from="1423163538684" duration="355000" />
+      <workItem from="1423229815345" duration="789000" />
+      <workItem from="1423253684798" duration="3286000" />
+      <workItem from="1423332792074" duration="65000" />
+      <workItem from="1424205351417" duration="2247000" />
+      <workItem from="1424348961728" duration="88000" />
+      <workItem from="1424423034749" duration="2557000" />
+      <workItem from="1424442984528" duration="3336000" />
+      <workItem from="1424725378684" duration="3886000" />
+      <workItem from="1424777379303" duration="9226000" />
+      <workItem from="1425284453383" duration="1257000" />
+      <workItem from="1425411550877" duration="16391000" />
+      <workItem from="1425752860103" duration="4413000" />
+      <workItem from="1425850416934" duration="1885000" />
+      <workItem from="1425933908346" duration="2794000" />
+      <workItem from="1425987362649" duration="46000" />
+      <workItem from="1426010434864" duration="2228000" />
+      <workItem from="1426021358882" duration="4415000" />
+      <workItem from="1426062810934" duration="8743000" />
+      <workItem from="1426150319109" duration="496000" />
+      <workItem from="1426153942874" duration="304000" />
+      <workItem from="1426154571602" duration="672000" />
+      <workItem from="1426157846491" duration="2742000" />
+      <workItem from="1426160646633" duration="1106000" />
+      <workItem from="1426162986366" duration="4492000" />
+      <workItem from="1426167676431" duration="1173000" />
+      <workItem from="1426169771477" duration="235000" />
+      <workItem from="1426245915021" duration="3118000" />
+      <workItem from="1426271682991" duration="15000" />
+      <workItem from="1426279948970" duration="176000" />
+      <workItem from="1426433196908" duration="1555000" />
+      <workItem from="1426518378878" duration="13994000" />
+      <workItem from="1426542043947" duration="3040000" />
+      <workItem from="1426589117763" duration="1957000" />
+      <workItem from="1426591352889" duration="278000" />
+      <workItem from="1426591644725" duration="11895000" />
+    </task>
+    <task id="LOCAL-00001" summary="Tag.java  added.">
+      <created>1414006728308</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1414006728308</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tag.java  added.">
+      <created>1414348160772</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1414348160772</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Extracting hashtags from Entry content handled.">
+      <created>1415140074185</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1415140074185</updated>
+    </task>
+    <task id="LOCAL-00004" summary="User class added">
+      <created>1415446759537</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1415446759537</updated>
+    </task>
+    <task id="LOCAL-00005" summary="User class added">
+      <created>1415571596786</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1415571596786</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Receiver introduced">
+      <created>1415580893379</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1415580893379</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Voter introduced without proper handling entry_id column">
+      <created>1415616221928</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1415616221928</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Voters split">
+      <created>1416256574422</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1416256574422</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Voters split">
+      <created>1416519567044</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1416519567044</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Still workin'">
+      <created>1416853679485</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1416853679485</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Still workin'">
+      <created>1416853860205</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1416853860205</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Voters handled properly at least :D">
+      <created>1416872831966</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1416872831966</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Handled Embed Mapping">
+      <created>1417118815050</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1417118815050</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Tags Uniqueness handled">
+      <created>1417285415748</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1417285415748</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Receivers Uniqueness handled">
+      <created>1417287590088</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1417287590088</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Some Refactor">
+      <created>1417287985497</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1417287985497</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Partial refactor with Sets instead Lists">
+      <created>1417733340860</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1417733340860</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Refactor and save fix expanded to Receivers">
+      <created>1417735267714</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1417735267714</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed Re-run issue">
+      <created>1418069989514</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1418069989514</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Handlem more fluent app Controll">
+      <created>1418103059586</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1418103059586</updated>
+    </task>
+    <task id="LOCAL-00021" summary="push test">
+      <created>1418952013645</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1418952013645</updated>
+    </task>
+    <task id="LOCAL-00022" summary="push test">
+      <created>1419114129711</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1419114129711</updated>
+    </task>
+    <task id="LOCAL-00023" summary="push test">
+      <created>1419212170394</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1419212170394</updated>
+    </task>
+    <task id="LOCAL-00024" summary="push test">
+      <created>1419212257287</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1419212257287</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Initial Commit">
+      <created>1419212533654</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1419212533654</updated>
+    </task>
+    <task id="LOCAL-00026" summary="New Branch">
+      <created>1424778230751</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1424778230751</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Wykop Branch">
+      <created>1424778289013</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1424778289013</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Link model Introduction">
+      <created>1425412945869</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1425412945869</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="514959000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="39" y="-4" width="1327" height="772" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19135803" sideWeight="0.5003903" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21467604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17330211" sideWeight="0.49618322" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41358024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17283951" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47854078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36574075" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32253087" sideWeight="0.49960968" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20921156" sideWeight="0.5154321" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24074075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20921156" sideWeight="0.4845679" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35227272" sideWeight="0.5007474" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="103" y="208" width="1166" height="544" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19135803" sideWeight="0.5003903" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21467604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17408274" sideWeight="0.49618322" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41358024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1898928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17283951" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="103" y="208" width="1166" height="544" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47854078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36574075" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32253087" sideWeight="0.49960968" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20921156" sideWeight="0.5154321" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24074075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20921156" sideWeight="0.4845679" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35227272" sideWeight="0.5007474" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Tag.java  added." />
+    <MESSAGE value="Extracting hashtags from Entry content handled." />
+    <MESSAGE value="User class added" />
+    <MESSAGE value="User mapping in cfg added" />
+    <MESSAGE value="Receiver introduced" />
+    <MESSAGE value="Voter introduced without proper handling entry_id column" />
+    <MESSAGE value="Voters split" />
+    <MESSAGE value="Still workin'" />
+    <MESSAGE value="Voters handled properly at least :D" />
+    <MESSAGE value="Handled Embed Mapping" />
+    <MESSAGE value="Tags Uniqueness handled" />
+    <MESSAGE value="Receivers Uniqueness handled" />
+    <MESSAGE value="Some Refactor" />
+    <MESSAGE value="Partial refactor with Sets instead Lists" />
+    <MESSAGE value="Refactor and save fix expanded to Receivers" />
+    <MESSAGE value="Fixed Re-run issue" />
+    <MESSAGE value="Handlem more fluent app Controll" />
+    <MESSAGE value="push test" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="New Branch" />
+    <MESSAGE value="Wykop Branch" />
+    <MESSAGE value="Link model Introduction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Link model Introduction" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="56" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+          <caret line="3" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/b59bd2ca/hibernate.cfg.xml/jackson/hibernate/Hibernate/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/b59bd2ca/hibernate.cfg.xml/jackson/hibernate/Hibernate/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="66.15625" y="0.0">Entry#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java</node>
+            <node x="162.046875" y="393.0">Tag#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java</node>
+            <node x="0.0" y="534.0">EntryComment#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java</node>
+            <node x="25.046875" y="403.5">Receiver#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java</node>
+            <node x="207.921875" y="906.0">Voter#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="EntryComment#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java" target="Entry#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
+              <point x="133.875" y="-161.0" />
+              <point x="312.375" y="509.0" />
+              <point x="323.984375" y="509.0" />
+              <point x="323.984375" y="368.0" />
+              <point x="301.78125" y="368.0" />
+              <point x="47.125" y="171.5" />
+            </edge>
+            <edge source="Tag#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java" target="Entry#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
+              <point x="0.0" y="-45.5" />
+              <point x="230.546875" y="368.0" />
+              <point x="207.53125" y="368.0" />
+              <point x="-47.125" y="171.5" />
+            </edge>
+            <edge source="EntryComment#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java" target="Tag#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java">
+              <point x="44.625" y="-161.0" />
+              <point x="223.125" y="509.0" />
+              <point x="230.546875" y="509.0" />
+              <point x="0.0" y="45.5" />
+            </edge>
+            <edge source="Receiver#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java" target="Entry#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
+              <point x="0.0" y="-35.0" />
+              <point x="83.546875" y="368.0" />
+              <point x="113.28125" y="368.0" />
+              <point x="-141.375" y="171.5" />
+            </edge>
+            <edge source="Receiver#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java" target="EntryComment#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java">
+              <point x="29.25" y="35.0" />
+              <point x="112.796875" y="509.0" />
+              <point x="133.875" y="509.0" />
+              <point x="-44.625" y="-161.0" />
+            </edge>
+            <edge source="Voter#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java" target="Entry#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
+              <point x="34.25" y="-45.5" />
+              <point x="310.671875" y="881.0" />
+              <point x="367.5" y="881.0" />
+              <point x="367.5" y="368.0" />
+              <point x="396.03125" y="368.0" />
+              <point x="141.375" y="171.5" />
+            </edge>
+            <edge source="Voter#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java" target="EntryComment#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java">
+              <point x="-34.25" y="-45.5" />
+              <point x="242.171875" y="881.0" />
+              <point x="178.5" y="881.0" />
+              <point x="0.0" y="161.0" />
+            </edge>
+            <edge source="EntryComment#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java" target="Receiver#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java">
+              <point x="-133.875" y="-161.0" />
+              <point x="44.625" y="509.0" />
+              <point x="54.296875" y="509.0" />
+              <point x="-29.25" y="35.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5850540806293019" x="223.0" y="599.0" />
+          <SelectedNodes>
+            <node>EntryComment#file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Embeddables</Category>
+            <Category>Properties</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/a31f0bd5-831b-43ea-aed6-3e71d7451275.schema:wykop.public">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>a31f0bd5-831b-43ea-aed6-3e71d7451275.schema:wykop.public</OriginalElement>
+          <nodes>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.tag</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry_comment</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry_comment_voter</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.reports</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.receiver</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.voter</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.dig</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.bury_reason</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.user_followers</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry_comment_receiver</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.comment</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry_comment_tag</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.related</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry_voter</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.users</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry_tag</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.links</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.entry_receiver</node>
+            <node x="" y="">a31f0bd5-831b-43ea-aed6-3e71d7451275.table:wykop.public.user_followed</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6322033898305085" x="581.0" y="640.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/ConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="162">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/dao/ReceiverDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1505618" vertical-offset="59" max-vertical-offset="504">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.33483145" vertical-offset="293" max-vertical-offset="738">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jackson.ipr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2034">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/jackson/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="612">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/WykopException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/json/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="450">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/json/JsonException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18446602" vertical-offset="174" max-vertical-offset="792">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/ConnectionException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23225807" vertical-offset="0" max-vertical-offset="930">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/user.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6247934" vertical-offset="0" max-vertical-offset="720">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/a.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4878893" vertical-offset="216" max-vertical-offset="3006">
+          <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
+          <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+          <caret line="124" column="21" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1360" max-vertical-offset="12870">
+          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52427185" vertical-offset="0" max-vertical-offset="618">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry_comment">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/3256e03b/hibernate.cfg.xml/jackson/hibernate/Hibernate/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/3256e03b/hibernate.cfg.xml/jackson/hibernate/Hibernate/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="" y="">Entry#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java</node>
+            <node x="" y="">Voter#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java</node>
+            <node x="" y="">Tag#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java</node>
+            <node x="" y="">EntryComment#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java</node>
+            <node x="" y="">Receiver#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java</node>
+            <node x="" y="">Embed#file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6641618497109826" x="1178.0" y="357.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Embeddables</Category>
+            <Category>Properties</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="846">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="828">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3492">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConnectionExceptionLog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71653545" vertical-offset="1126041" max-vertical-offset="1126422">
+          <caret line="62573" column="6" selection-start-line="62573" selection-start-column="6" selection-end-line="62573" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5748032" vertical-offset="447" max-vertical-offset="828">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/pl.poznan.put.cs.wykop.model.Link">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>pl.poznan.put.cs.wykop.model.Link</OriginalElement>
+          <nodes>
+            <node x="" y="">pl.poznan.put.cs.wykop.model.Link</node>
+            <node x="" y="">javax.persistence.Entity</node>
+            <node x="" y="">com.fasterxml.jackson.annotation.JsonIgnoreProperties</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="138.0" y="56.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.058252428" vertical-offset="0" max-vertical-offset="618">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/SessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.407767" vertical-offset="0" max-vertical-offset="618">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/util/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23801653" vertical-offset="0" max-vertical-offset="605">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry_voter">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.users">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/wykop.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.047244094" vertical-offset="0" max-vertical-offset="381">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34545454" vertical-offset="313" max-vertical-offset="918">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.comment">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/comLink.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17518248" vertical-offset="162" max-vertical-offset="210636">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/api/Api.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5380435" vertical-offset="54" max-vertical-offset="756">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.tag">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry_tag">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="tag_id=339003" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/EntryComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7140496" vertical-offset="108" max-vertical-offset="3672">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="43" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.3140497" vertical-offset="594" max-vertical-offset="3798">
+          <caret line="242" column="19" selection-start-line="242" selection-start-column="19" selection-end-line="246" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/dao/TagDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5533981" vertical-offset="0" max-vertical-offset="618">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Link.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="961" max-vertical-offset="3726">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2475#2476#0" expanded="true" />
+            <element signature="e#2534#2535#0" expanded="true" />
+            <element signature="e#2574#2575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/service/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1890">
+          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="115" max-vertical-offset="1116">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3039" max-vertical-offset="4032">
+          <caret line="249" column="25" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.566667" vertical-offset="631" max-vertical-offset="1206">
+          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3528">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51968503" vertical-offset="252" max-vertical-offset="900">
+          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jackson</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

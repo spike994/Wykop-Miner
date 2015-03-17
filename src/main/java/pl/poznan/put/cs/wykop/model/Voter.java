@@ -55,10 +55,5 @@ public class Voter {
 		this.date = date;
 	}
 
-	@Override
-	public String toString() {
-		return "Voter [author=" + author + ", date=" + date + "]";
-	}
-
 
 }

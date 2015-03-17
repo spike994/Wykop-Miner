@@ -27,6 +27,18 @@ public class Tag {
     @ManyToMany(mappedBy = "tags")
     private List<EntryComment> entryComments;
 
+    @ManyToMany(mappedBy = "tagList")
+    private  List<Link> links;
+
+
+    public List<Link> getLinks() {
+        return links;
+    }
+
+    public void setLinks(List<Link> links) {
+        this.links = links;
+    }
+
     public String getName() {
         return name;
     }
@@ -60,4 +72,5 @@ public class Tag {
     public void setEntryComments(List<EntryComment> entryComments) {
         this.entryComments = entryComments;
     }
+
 }

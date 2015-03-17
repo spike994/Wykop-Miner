@@ -6,12 +6,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import pl.poznan.put.cs.wykop.dao.ReceiverDAO;
 import pl.poznan.put.cs.wykop.dao.TagDAO;
 
-import javax.persistence.CascadeType;
-
 import javax.persistence.*;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.util.*;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -45,7 +44,7 @@ public class Entry {
     private Embed embed;
     @Id
     @Column(name = "id")
-    private long id;
+    private long id;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     @Transient
     @Column(name = "source")
     private String source;
@@ -268,8 +267,26 @@ public class Entry {
 
     @Override
     public String toString() {
-        return "Entry [app=" + app + ", author=" + author + ", blocked=" + blocked + ", body=" + body + ", commentCount=" + commentCount + ", comments=" + comments + ", date=" + date + ", deleted="
-                + deleted + ", embed=" + embed + ", id=" + id + ", receiver=" + receiver + ", source=" + source + ", type=" + type + ", url=" + url + ", voteCount=" + voteCount + ", voters=" + voters
-                + "]";
+        return "Entry{" +
+                "\napp='" + app + '\'' +
+                ",\n author='" + author + '\'' +
+                ",\n blocked=" + blocked +
+                ",\n body='" + body + '\'' +
+                ",\n commentCount=" + commentCount +
+                ",\n voters=" + voters +
+                ",\n comments=" + comments +
+                ",\n date=" + date +
+                ",\n deleted=" + deleted +
+                ",\n embed=" + embed +
+                ",\n id=" + id +
+                ",\n source='" + source + '\'' +
+                ",\n receivers=" + receivers +
+                ",\n type='" + type + '\'' +
+                ",\n authorGroup=" + authorGroup +
+                ",\n url='" + url + '\'' +
+                ",\n voteCount=" + voteCount +
+                ",\n receiver='" + receiver + '\'' +
+                ",\n tags=" + tags +
+                '}';
     }
 }
