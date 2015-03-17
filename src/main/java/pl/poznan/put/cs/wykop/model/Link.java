@@ -274,14 +274,15 @@ public class Link {
 
     public void inflateTags(TagDAO tagDAO){
         Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
-        Matcher matcher = pattern.matcher(tags);
-        tagList = new HashSet<Tag>();
-        while(matcher.find())
-        {
-            String name = matcher.group();
-            Tag tag = tagDAO.getTag(name);
-            tagList.add(tag);
-            tag.setName(matcher.group());
+        if(tags!=null) {
+            Matcher matcher = pattern.matcher(tags);
+            tagList = new HashSet<Tag>();
+            while (matcher.find()) {
+                String name = matcher.group();
+                Tag tag = tagDAO.getTag(name);
+                tagList.add(tag);
+                tag.setName(matcher.group());
+            }
         }
     }
 
