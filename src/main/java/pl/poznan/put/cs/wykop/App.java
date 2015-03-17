@@ -38,15 +38,14 @@ public class App {
         Criteria criteria = session
                 .createCriteria(Link.class)
                 .setProjection(Projections.min("id"));
-//        long lastLink = (Long) criteria.uniqueResult();
-        for (int i = 2447553; i>0 ; i--) {
+        long lastLink = (Long) criteria.uniqueResult();
+        for (int i = (int) lastLink -1; i>0 ; i--) {
             transaction = session.beginTransaction();
             try {
                 Link link = api.getLinkString(i);
                 LinkService.save(link, session);
-
                 transaction.commit();
-                System.out.println(link.getId());
+                System.out.println(link.getId()+" "+link.getTitle()+" "+link.getDate());
             } catch (WykopException e) {
                 transaction.rollback();
             } catch (ConnectionException e) {
