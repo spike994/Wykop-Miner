@@ -2354,6 +2354,7 @@
       <column name="embed_name" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="embed_source" sqlType="text" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <column name="embed_plus18" sqlType="bool" precision="1" scale="0" nullable="true" jdbcType="-7"/>
+      <index name="unique_id" unique="true" columns="id"/>
     </table>
     <table name="entry_comment" schema="public" catalog="wykop" type="TABLE">
       <column name="id" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
@@ -2412,9 +2413,6 @@
       <column name="log_cnt" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
       <column name="is_cycled" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
       <column name="is_called" sqlType="bool" precision="1" scale="0" nullable="false" jdbcType="-7"/>
-    </table>
-    <table name="links" schema="public" catalog="wykop" type="TABLE">
-      <column name="id" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
     </table>
     <table name="receiver" schema="public" catalog="wykop" type="TABLE">
       <column name="id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>

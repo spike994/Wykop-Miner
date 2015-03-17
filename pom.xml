@@ -183,7 +183,7 @@
     <repositories>
         <repository>
             <id>spring-maven-milestone</id>
-            <login>Spring Maven Milestone Repository</login>
+            <name>Spring Maven Milestone Repository</name>
             <url>http://maven.springframework.org/milestone</url>
         </repository>
     </repositories>
