@@ -1,5 +1,6 @@
 package pl.poznan.put.cs.wykop.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import pl.poznan.put.cs.wykop.dao.ReceiverDAO;
@@ -8,6 +9,7 @@ import pl.poznan.put.cs.wykop.dao.TagDAO;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,8 +17,9 @@ import java.util.regex.Pattern;
  * Created by dk994 on 12.03.15.
  */
 @Entity
-@Table(name = "link_comment")
-@JsonIgnoreProperties({"author_avatar", "author_avatar_big", "author_avatar_med", "author_avatar_lo"})
+@Table(name = "comment")
+//TODO Embed, tags, receivers handling
+@JsonIgnoreProperties({"author_avatar","violation_url","user_favorite","embed","user_vote","can_vote","status", "author_avatar_big", "author_avatar_med", "author_avatar_lo"})
 public class LinkComment {
     @Id
     @Column(name = "id")
@@ -51,29 +54,21 @@ public class LinkComment {
     private String type;
     @Column(name = "app")
     private String app;
-//    @Column(name = "tags")
-//    private HashSet<Tag> tags;
-//    @Column(name = "receivers")
-//    private HashSet<Receiver> receivers;
+    @Embedded
+    private Embed embed;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name="comment_tag",
+            joinColumns={@JoinColumn(name="id_comment")},
+            inverseJoinColumns={@JoinColumn(name="id_tag")})
+    private Set<Tag> tags;
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name = "comment_receiver",
+            joinColumns = {@JoinColumn(name = "id_comment")},
+            inverseJoinColumns = {@JoinColumn(name = "id_receiver")})
+    private Set<Receiver> receivers;
     @ManyToOne
     @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
     private Link link;
-
-//    public HashSet<Tag> getTags() {
-//        return tags;
-//    }
-//
-//    public void setTags(HashSet<Tag> tags) {
-//        this.tags = tags;
-//    }
-//
-//    public HashSet<Receiver> getReceivers() {
-//        return receivers;
-//    }
-//
-//    public void setReceivers(HashSet<Receiver> receivers) {
-//        this.receivers = receivers;
-//    }
 
     public long getId() {
         return id;
@@ -97,6 +92,7 @@ public class LinkComment {
     }
 
     @JsonProperty("date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "CET")
     public void setDate(Date date) {
         this.date = date;
     }
@@ -218,32 +214,31 @@ public class LinkComment {
         this.app = app;
     }
 
-//    public void inflateTags(TagDAO tagDAO) {
-//        Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
-//        Matcher matcher = pattern.matcher(this.body);
-//        tags = new HashSet<Tag>();
-//        while (matcher.find()) {
-//            String name = matcher.group();
-//            Tag tag = tagDAO.getTag(name);
-//            tags.add(tag);
-//        }
-//    }
-//
-//    public void inflateReceivers(ReceiverDAO receiverDAO) {
-//        Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
-//        Matcher matcher = pattern.matcher(this.body);
-//        receivers = new HashSet<Receiver>();
-//        while (matcher.find()) {
-//            String name = matcher.group();
-//            Receiver receiver = receiverDAO.getReceiver(name);
-//            receivers.add(receiver);
-//        }
-//    }
+    public void inflateTags(TagDAO tagDAO) {
+        Pattern pattern = Pattern.compile("(?<![^\\s]+)#[a-zA-Z0-9]+");
+        Matcher matcher = pattern.matcher(this.body);
+        tags = new HashSet<Tag>();
+        while (matcher.find()) {
+            String name = matcher.group();
+            Tag tag = tagDAO.getTag(name);
+            tags.add(tag);
+        }
+    }
 
-//    public void hydrate(TagDAO tagDAO, ReceiverDAO receiverDAO) {
-//        this.inflateTags(tagDAO);
-//        this.inflateReceivers(receiverDAO);
-//    }
+    public void inflateReceivers(ReceiverDAO receiverDAO) {
+        Pattern pattern = Pattern.compile("(?<![^\\s]+)@[a-zA-Z0-9]+");
+        Matcher matcher = pattern.matcher(this.body);
+        receivers = new HashSet<Receiver>();
+        while (matcher.find()) {
+            String name = matcher.group();
+            Receiver receiver = receiverDAO.getReceiver(name);
+            receivers.add(receiver);
+        }
+    }
+
+    public void hydrate(TagDAO tagDAO, ReceiverDAO receiverDAO) {
+        this.inflateReceivers(receiverDAO);
+    }
 
     @Override
     public String toString() {

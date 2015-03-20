@@ -12,8 +12,10 @@ import pl.poznan.put.cs.wykop.model.LinkComment;
 public class LinkCommentService {
 
     public static LinkComment save(LinkComment linkComment, Session session){
+
         TagDAO tagDAO = new TagDAO();
         ReceiverDAO receiverDAO = new ReceiverDAO();
+        linkComment.hydrate(tagDAO, receiverDAO);
         Long id = (Long) session.save(linkComment);
         linkComment.setId(id);
         return linkComment;

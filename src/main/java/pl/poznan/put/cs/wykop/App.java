@@ -1,5 +1,6 @@
 package pl.poznan.put.cs.wykop;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.FileUtils;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
@@ -12,10 +13,8 @@ import pl.poznan.put.cs.wykop.connection.WykopException;
 import pl.poznan.put.cs.wykop.json.JsonException;
 import pl.poznan.put.cs.wykop.model.Entry;
 import pl.poznan.put.cs.wykop.model.Link;
-import pl.poznan.put.cs.wykop.service.ConfigManager;
-import pl.poznan.put.cs.wykop.service.EntryService;
-import pl.poznan.put.cs.wykop.service.LinkService;
-import pl.poznan.put.cs.wykop.service.SessionManager;
+import pl.poznan.put.cs.wykop.model.LinkComment;
+import pl.poznan.put.cs.wykop.service.*;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -35,17 +34,28 @@ public class App {
         Session session = SessionManager.getSessionManager().getSession();
         api.setHourLimit(h);
         Transaction transaction;
-        Criteria criteria = session
+        Criteria criteriaMin = session
                 .createCriteria(Link.class)
                 .setProjection(Projections.min("id"));
-        long lastLink = (Long) criteria.uniqueResult();
-        for (int i = (int) lastLink -1; i>0 ; i--) {
+        Criteria criteriaMax = session
+                .createCriteria(Link.class)
+                .setProjection(Projections.max("id"));
+        long first = (Long) criteriaMin.uniqueResult();
+        long last = (Long) criteriaMax.uniqueResult();
+        ObjectMapper mapper = new ObjectMapper();
+        for (int i = (int) first; i<(int) last ; i++) {
             transaction = session.beginTransaction();
+
             try {
-                Link link = api.getLinkString(i);
-                LinkService.save(link, session);
+                String response = api.getLinksCommentsString(i);
+                LinkComment[] comments = mapper.readValue(response, LinkComment[].class);
+                for(LinkComment linkComment : comments){
+                    linkComment.setLinkId(i);
+                    LinkCommentService.save(linkComment,session);
+                    System.out.println(linkComment.getId()+"  "+linkComment.getDate());
+                }
                 transaction.commit();
-                System.out.println(link.getId()+" "+link.getTitle()+" "+link.getDate());
+
             } catch (WykopException e) {
                 transaction.rollback();
             } catch (ConnectionException e) {

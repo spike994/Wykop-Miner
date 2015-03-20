@@ -19,8 +19,8 @@ public class Api {
 		return this.getObject("entries/index", "" + i, Entry.class);
 	}
 
-	public LinkComment getLinksCommentsString(int i) throws ConnectionException, JsonException {
-		return this.getObject("link/comments", "" + i, LinkComment.class);
+	public String getLinksCommentsString(int i) throws ConnectionException, JsonException {
+		return this.getJsonResponse("link/comments", "" + i);
 	}
 
 	public Link getLinkString(int i) throws ConnectionException, JsonException {
