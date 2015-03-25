@@ -55,6 +55,7 @@ public class App {
                     System.out.println(linkComment.getId()+"  "+linkComment.getDate());
                 }
                 transaction.commit();
+                FileUtils.writeStringToFile(new File("saved.txt"), i+"\n",true);
 
             } catch (WykopException e) {
                 transaction.rollback();

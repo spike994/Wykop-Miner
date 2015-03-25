@@ -70,6 +70,38 @@ public class LinkComment {
     @JoinColumn(name = "id", referencedColumnName = "id", insertable = false, updatable = false)
     private Link link;
 
+    public Embed getEmbed() {
+        return embed;
+    }
+    @JsonProperty("embed")
+    public void setEmbed(Embed embed) {
+        this.embed = embed;
+    }
+
+    public Set<Tag> getTags() {
+        return tags;
+    }
+
+    public void setTags(Set<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public Set<Receiver> getReceivers() {
+        return receivers;
+    }
+
+    public void setReceivers(Set<Receiver> receivers) {
+        this.receivers = receivers;
+    }
+
+    public Link getLink() {
+        return link;
+    }
+
+    public void setLink(Link link) {
+        this.link = link;
+    }
+
     public long getId() {
         return id;
     }

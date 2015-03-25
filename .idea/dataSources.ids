@@ -2514,10 +2514,6 @@
       <column name="app" sqlType="varchar" precision="2147483647" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="link_pkey" columns="id"/>
     </table>
-    <table name="link_comment" schema="public" catalog="wykop" type="TABLE">
-      <column name="comment_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-      <column name="link_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
-    </table>
     <table name="link_comment_receiver" schema="public" catalog="wykop" type="TABLE">
       <column name="link_comment_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
       <column name="receiver_id" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
