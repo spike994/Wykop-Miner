@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="hibernate.cfg.xml" uuid="a31f0bd5-831b-43ea-aed6-3e71d7451275">
-    <database-info product="PostgreSQL" version="9.3.6" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4.1 (build 1102)">
+    <database-info product="PostgreSQL" version="9.4.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4.1 (build 1102)">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
@@ -2562,9 +2562,16 @@
       <column name="buries" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
       <column name="evulated_links" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
       <column name="groups" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <column name="entires" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="entriescomments" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
-      <column name="evaluatedlinks" sqlType="int4" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="entires" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="evaluated_links" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="published_links" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="related_links" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="links_added" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="entry_count" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="sex" sqlType="varchar" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
+      <column name="url" sqlType="varchar" precision="2147483647" scale="0" nullable="false" jdbcType="12"/>
+      <column name="signup_date" sqlType="date" precision="13" scale="0" nullable="false" jdbcType="91"/>
+      <column name="user_group" sqlType="int8" precision="19" scale="0" nullable="false" jdbcType="-5"/>
     </table>
     <table name="voter" schema="public" catalog="wykop" type="TABLE">
       <column name="id" sqlType="int8" precision="19" scale="0" nullable="true" jdbcType="-5"/>

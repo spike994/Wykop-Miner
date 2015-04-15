@@ -6,20 +6,16 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Projections;
-import org.hibernate.exception.ConstraintViolationException;
 import pl.poznan.put.cs.wykop.api.Api;
 import pl.poznan.put.cs.wykop.connection.ConnectionException;
 import pl.poznan.put.cs.wykop.connection.WykopException;
 import pl.poznan.put.cs.wykop.json.JsonException;
-import pl.poznan.put.cs.wykop.model.Entry;
 import pl.poznan.put.cs.wykop.model.Link;
-import pl.poznan.put.cs.wykop.model.LinkComment;
-import pl.poznan.put.cs.wykop.service.*;
+import pl.poznan.put.cs.wykop.model.User;
+import pl.poznan.put.cs.wykop.service.ConfigManager;
+import pl.poznan.put.cs.wykop.service.SessionManager;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,31 +39,67 @@ public class App {
         long first = (Long) criteriaMin.uniqueResult();
         long last = (Long) criteriaMax.uniqueResult();
         ObjectMapper mapper = new ObjectMapper();
-        for (int i = (int) first; i<(int) last ; i++) {
+
+        List<String> users = getUsers("Users_uniq");
+
+
+        for (String arg : users) {
             transaction = session.beginTransaction();
-
             try {
-                String response = api.getLinksCommentsString(i);
-                LinkComment[] comments = mapper.readValue(response, LinkComment[].class);
-                for(LinkComment linkComment : comments){
-                    linkComment.setLinkId(i);
-                    LinkCommentService.save(linkComment,session);
-                    System.out.println(linkComment.getId()+"  "+linkComment.getDate());
-                }
+                String response = api.getProfileString(arg);
+                User usr = mapper.readValue(response, User.class);
+                session.save(usr);
+                FileUtils.writeStringToFile(new File("dd"), arg + "\n", true);
+                System.out.println(arg);
                 transaction.commit();
-                FileUtils.writeStringToFile(new File("saved.txt"), i+"\n",true);
-
             } catch (WykopException e) {
                 transaction.rollback();
-            } catch (ConnectionException e) {
-                FileUtils.writeStringToFile(new File("LinkConnExcLog.txt"), i + "\n", true);
-                transaction.rollback();
-            } catch (ConstraintViolationException e) {
-                System.out.println("Constraint Violation Exception");
-                transaction.rollback();
+                FileUtils.writeStringToFile(new File("errors"), arg + "\n", true);
             }
         }
+
+
+//        for (int i = (int) first; i<(int) last ; i++) {
+//            transaction = session.beginTransaction();
+//
+//            try {
+//                String response = api.getLinksCommentsString(i);
+//                LinkComment[] comments = mapper.readValue(response, LinkComment[].class);
+//                for(LinkComment linkComment : comments){
+//                    linkComment.setLinkId(i);
+//                    LinkCommentService.save(linkComment,session);
+//                    System.out.println(linkComment.getId()+"  "+linkComment.getDate());
+//                }
+//                transaction.commit();
+//                FileUtils.writeStringToFile(new File("saved.txt"), i+"\n",true);
+//
+//            } catch (WykopException e) {
+//                transaction.rollback();
+//            } catch (ConnectionException e) {
+//                FileUtils.writeStringToFile(new File("LinkConnExcLog.txt"), i + "\n", true);
+//                transaction.rollback();
+//            } catch (ConstraintViolationException e) {
+//                System.out.println("Constraint Violation Exception");
+//                transaction.rollback();
+//            }
+//        }
         session.close();
+    }
+
+    public static List<String> getUsers(String path) {
+        String line = null;
+        List<String> result = new ArrayList<String>();
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+            while ((line = br.readLine()) != null) {
+                String dupa = line.trim();
+                result.add(dupa);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 
 

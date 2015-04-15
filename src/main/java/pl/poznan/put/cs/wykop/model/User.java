@@ -1,87 +1,90 @@
 package pl.poznan.put.cs.wykop.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 import java.sql.Date;
-import java.util.List;
 
 /**
  * Created by dk994 on 08.11.14.
  */
 @Entity
 @Table(name = "users")
+@JsonIgnoreProperties({"email", "avatar", "avatar_big", "avatar_med", "avatar_lo", "is_observed", "is_blocked", "violation_url",
+        "public_email", "name", "www", "jabber", "gg", "city", "about",})
 public class User {
     @Id
     @GeneratedValue
     @Column(name = "id")
-    private int id;
-    @Column(name = "login")
+    private long id;
+    @Column(name = "name")
     private String login;
     @Column(name = "rank")
-    private int rank;
+    private long rank;
     @Column(name = "followers")
-    private int followers;
+    private long followers;
     @Column(name = "following")
-    private int following;
+    private long following;
     @Column(name = "entires")
-    private int entires;
+    private long entires;
     @Column(name = "comments")
-    private int comments;
-    @Column(name = "entriesComments")
-    private int entriesComments;
+    private long comments;
+    @Column(name = "entries_comments")
+    private long entriesComments;
     @Column(name = "digs")
-    private int digs;
+    private long digs;
     //TODO check format of buries
     @Column(name = "buries")
-    private int buries;
-    @Column(name = "publishedLinks")
-    private int publishedLinks;
+    private long buries;
+    @Column(name = "published_links")
+    private long publishedLinks;
     @Column(name = "groups")
-    private int groups;
+    private long groups;
     @Column(name = "related_links")
-    private int relatedLinks;
+    private long relatedLinks;
     @Column(name = "links_added")
-    private int linksAdded;
+    private long linksAdded;
     @Column(name = "entry_count")
-    private int entryCount;
-    @Column( name = "sex")
+    private long entryCount;
+    @Column(name = "sex")
     private String sex;
     @Column(name = "url")
     private String url;
     @Column(name = "signup_date")
     private Date signUpDate;
     @Column(name = "user_group")
-    private int userGroup;
-    @ManyToMany(mappedBy = "receivers")
-    private List<Entry> entries;
-    @ManyToMany(mappedBy = "receivers")
-    private List<EntryComment> entryComments;
+    private long userGroup;
+//    @ManyToMany(mappedBy = "receivers")
+//    private List<Entry> entries;
+//    @ManyToMany(mappedBy = "receivers")
+//    private List<EntryComment> entryComments;
 
-    public int getRelatedLinks() {
+    public long getRelatedLinks() {
         return relatedLinks;
     }
 
     @JsonProperty("related_links")
-    public void setRelatedLinks(int relatedLinks) {
+    public void setRelatedLinks(long relatedLinks) {
         this.relatedLinks = relatedLinks;
     }
 
-    public int getLinksAdded() {
+    public long getLinksAdded() {
         return linksAdded;
     }
 
     @JsonProperty("links_added")
-    public void setLinksAdded(int linksAdded) {
+    public void setLinksAdded(long linksAdded) {
         this.linksAdded = linksAdded;
     }
 
-    public int getEntryCount() {
+    public long getEntryCount() {
         return entryCount;
     }
 
     @JsonProperty("entries")
-    public void setEntryCount(int entryCount) {
+    public void setEntryCount(long entryCount) {
         this.entryCount = entryCount;
     }
 
@@ -108,40 +111,41 @@ public class User {
     }
 
     @JsonProperty("signup_date")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "CET")
     public void setSignUpDate(Date signUpDate) {
         this.signUpDate = signUpDate;
     }
 
-    public int getUserGroup() {
+    public long getUserGroup() {
         return userGroup;
     }
 
     @JsonProperty("author_group")
-    public void setUserGroup(int userGroup) {
+    public void setUserGroup(long userGroup) {
         this.userGroup = userGroup;
     }
 
-    public List<Entry> getEntries() {
-        return entries;
-    }
+//    public List<Entry> getEntries() {
+//        return entries;
+//    }
+//
+//    public void setEntries(List<Entry> entries) {
+//        this.entries = entries;
+//    }
 
-    public void setEntries(List<Entry> entries) {
-        this.entries = entries;
-    }
+//    public List<EntryComment> getEntryComments() {
+//        return entryComments;
+//    }
+//
+//    public void setEntryComments(List<EntryComment> entryComments) {
+//        this.entryComments = entryComments;
+//    }
 
-    public List<EntryComment> getEntryComments() {
-        return entryComments;
-    }
-
-    public void setEntryComments(List<EntryComment> entryComments) {
-        this.entryComments = entryComments;
-    }
-
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -154,93 +158,93 @@ public class User {
         this.login = login;
     }
 
-    public int getRank() {
+    public long getRank() {
         return rank;
     }
 
     @JsonProperty("rank")
-    public void setRank(int rank) {
+    public void setRank(long rank) {
         this.rank = rank;
     }
 
-    public int getFollowers() {
+    public long getFollowers() {
         return followers;
     }
 
     @JsonProperty("followers")
-    public void setFollowers(int followers) {
+    public void setFollowers(long followers) {
         this.followers = followers;
     }
 
-    public int getFollowing() {
+    public long getFollowing() {
         return following;
     }
 
     @JsonProperty("following")
-    public void setFollowing(int following) {
+    public void setFollowing(long following) {
         this.following = following;
     }
 
-    public int getEntires() {
-        return entires;
-    }
+//    public long getEntires() {
+//        return entires;
+//    }
+//
+//    @JsonProperty("entries")
+//    public void setEntires(long entires) {
+//        this.entires = entires;
+//    }
 
-    @JsonProperty("entries")
-    public void setEntires(int entires) {
-        this.entires = entires;
-    }
-
-    public int getComments() {
+    public long getComments() {
         return comments;
     }
 
     @JsonProperty("comments")
-    public void setComments(int comments) {
+    public void setComments(long comments) {
         this.comments = comments;
     }
 
-    public int getEntriesComments() {
+    public long getEntriesComments() {
         return entriesComments;
     }
 
     @JsonProperty("entries_comments")
-    public void setEntriesComments(int entriesComments) {
+    public void setEntriesComments(long entriesComments) {
         this.entriesComments = entriesComments;
     }
 
-    public int getDigs() {
+    public long getDigs() {
         return digs;
     }
 
     @JsonProperty("diggs")
-    public void setDigs(int digs) {
+    public void setDigs(long digs) {
         this.digs = digs;
     }
 
-    public int getBuries() {
+    public long getBuries() {
         return buries;
     }
 
     @JsonProperty("buries")
-    public void setBuries(int buries) {
+    public void setBuries(long buries) {
         this.buries = buries;
     }
 
-    public int getPublishedLinks() {
+    public long getPublishedLinks() {
         return publishedLinks;
     }
 
-    @JsonProperty("publishedLinks")
-    public void setPublishedLinks(int publishedLinks) {
+    @JsonProperty("links_published")
+    public void setPublishedLinks(long publishedLinks) {
         this.publishedLinks = publishedLinks;
     }
 
-    public int getGroups() {
+    public long getGroups() {
         return groups;
     }
 
     @JsonProperty("groups")
-    public void setGroups(int groups) {
+    public void setGroups(long groups) {
         this.groups = groups;
     }
 
@@ -266,8 +270,6 @@ public class User {
                 ",\n url='" + url + '\'' +
                 ",\n signUpDate=" + signUpDate +
                 ",\n userGroup=" + userGroup +
-                ",\n entries=" + entries +
-                ",\n entryComments=" + entryComments +
                 '}';
     }
 
