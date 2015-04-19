@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="273e1baf-73e5-468b-9019-740767a5ac97" name="Default" comment="Link model Introduction">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saved.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+    <list default="true" id="273e1baf-73e5-468b-9019-740767a5ac97" name="Default" comment="Profile download with User  model refactor">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Wykop-Miner.iws" />
@@ -87,11 +82,19 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75064933">
+            <state vertical-scroll-proportion="0.7234042">
               <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding>
-                <element signature="e#3774#3782#0" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wykop.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/wykop.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,8 +102,8 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a31f0bd5-831b-43ea-aed6-3e71d7451275/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -111,78 +114,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="56" column="30" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="30" />
-              <folding>
-                <element signature="e#1920#1921#0" expanded="true" />
-                <element signature="e#1955#1956#0" expanded="true" />
-                <element signature="e#2044#2045#0" expanded="true" />
-                <element signature="e#2092#2093#0" expanded="true" />
-                <element signature="e#2127#2128#0" expanded="true" />
-                <element signature="e#2160#2161#0" expanded="true" />
-                <element signature="e#2243#2244#0" expanded="true" />
-                <element signature="e#2287#2288#0" expanded="true" />
-                <element signature="e#2322#2323#0" expanded="true" />
-                <element signature="e#2355#2356#0" expanded="true" />
-                <element signature="e#2434#2435#0" expanded="true" />
-                <element signature="e#2478#2479#0" expanded="true" />
-                <element signature="e#2508#2509#0" expanded="true" />
-                <element signature="e#2534#2535#0" expanded="true" />
-                <element signature="e#2597#2598#0" expanded="true" />
-                <element signature="e#2627#2628#0" expanded="true" />
-                <element signature="e#2657#2658#0" expanded="true" />
-                <element signature="e#2683#2684#0" expanded="true" />
-                <element signature="e#2746#2747#0" expanded="true" />
-                <element signature="e#2776#2777#0" expanded="true" />
-                <element signature="e#2811#2812#0" expanded="true" />
-                <element signature="e#2844#2845#0" expanded="true" />
-                <element signature="e#3027#3028#0" expanded="true" />
-                <element signature="e#3071#3072#0" expanded="true" />
-                <element signature="e#3105#3106#0" expanded="true" />
-                <element signature="e#3137#3138#0" expanded="true" />
-                <element signature="e#3219#3220#0" expanded="true" />
-                <element signature="e#3261#3262#0" expanded="true" />
-                <element signature="e#3682#3683#0" expanded="true" />
-                <element signature="e#3707#3708#0" expanded="true" />
-                <element signature="e#3741#3742#0" expanded="true" />
-                <element signature="e#3769#3770#0" expanded="true" />
-                <element signature="e#3801#3802#0" expanded="true" />
-                <element signature="e#3829#3830#0" expanded="true" />
-                <element signature="e#3898#3899#0" expanded="true" />
-                <element signature="e#3932#3933#0" expanded="true" />
-                <element signature="e#3961#3962#0" expanded="true" />
-                <element signature="e#3988#3989#0" expanded="true" />
-                <element signature="e#4052#4053#0" expanded="true" />
-                <element signature="e#4084#4085#0" expanded="true" />
-                <element signature="e#4118#4119#0" expanded="true" />
-                <element signature="e#4150#4151#0" expanded="true" />
-                <element signature="e#4229#4230#0" expanded="true" />
-                <element signature="e#4271#4272#0" expanded="true" />
-                <element signature="e#4305#4306#0" expanded="true" />
-                <element signature="e#4337#4338#0" expanded="true" />
-                <element signature="e#4416#4417#0" expanded="true" />
-                <element signature="e#4458#4459#0" expanded="true" />
-                <element signature="e#4680#4681#0" expanded="true" />
-                <element signature="e#4711#4712#0" expanded="true" />
-                <element signature="e#4787#4788#0" expanded="true" />
-                <element signature="e#4827#4828#0" expanded="true" />
-                <element signature="e#4867#4868#0" expanded="true" />
-                <element signature="e#4905#4906#0" expanded="true" />
-                <element signature="e#5003#5004#0" expanded="true" />
-                <element signature="e#5057#5058#0" expanded="true" />
-                <element signature="e#5086#5087#0" expanded="true" />
-                <element signature="e#5113#5114#0" expanded="true" />
-                <element signature="e#5178#5179#0" expanded="true" />
-                <element signature="e#5210#5211#0" expanded="true" />
-                <element signature="e#5241#5242#0" expanded="true" />
-                <element signature="e#5270#5271#0" expanded="true" />
-                <element signature="e#5340#5341#0" expanded="true" />
-                <element signature="e#5376#5377#0" expanded="true" />
-                <element signature="e#5415#5416#0" expanded="true" />
-                <element signature="e#5452#5453#0" expanded="true" />
-                <element signature="e#5547#5548#0" expanded="true" />
-                <element signature="e#5599#5600#0" expanded="true" />
-                <element signature="e#5630#5631#0" expanded="true" />
-                <element signature="e#5659#5660#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,9 +185,10 @@
         <option value="db-console:/3256e03b/a31f0bd5-831b-43ea-aed6-3e71d7451275/" />
         <option value="$PROJECT_DIR$/src/main/resources/wykop.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/dd" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a31f0bd5-831b-43ea-aed6-3e71d7451275/console.sql" />
-        <option value="$PROJECT_DIR$/dd" />
+        <option value="$PROJECT_DIR$/Users_uniq" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java" />
       </list>
     </option>
@@ -600,7 +533,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///home/spike994/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;hib&#9;FILE&#9;file:///home/spike994/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;User&#9;PSI&#9;JAVA://pl.poznan.put.cs.wykop.model.User&#10;Us&#9;FILE&#9;file:///home/spike994/Workspace/Wykop-Miner/Users_uniq&#10;Ent&#9;PSI&#9;JAVA://pl.poznan.put.cs.wykop.model.EntryComment&#10;linkC&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java&#10;pom&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;po&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;Con&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java&#10;ap&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;App&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;LinkC&#9;PSI&#9;JAVA://pl.poznan.put.cs.wykop.model.LinkComment&#10;link&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Link.java&#10;en&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;A&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;Ap&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;Entry&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;selection&#9;ACTION&#9;EditorToggleColumnMode&#10;E&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;c&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java&#10;Tag&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java&#10;Entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;Ta&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java&#10;e&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;Embe&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java&#10;entry&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;voter&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;hi&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;vo&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;rece&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java" />
+    <property name="SearchEverywhereHistoryKey" value="Use&#9;FILE&#9;file:///home/spike994/Workspace/Wykop-Miner/Users_uniq&#10;app&#9;FILE&#9;file:///home/spike994/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;hib&#9;FILE&#9;file:///home/spike994/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;User&#9;PSI&#9;JAVA://pl.poznan.put.cs.wykop.model.User&#10;Us&#9;FILE&#9;file:///home/spike994/Workspace/Wykop-Miner/Users_uniq&#10;Ent&#9;PSI&#9;JAVA://pl.poznan.put.cs.wykop.model.EntryComment&#10;linkC&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/LinkComment.java&#10;pom&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;po&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/pom.xml&#10;Con&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/connection/Connection.java&#10;ap&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;App&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;LinkC&#9;PSI&#9;JAVA://pl.poznan.put.cs.wykop.model.LinkComment&#10;link&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Link.java&#10;en&#9;FILE&#9;file:///home/dk994/Pulpit/stuff/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;A&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/App.java&#10;Ap&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/api/Api.java&#10;Entry&#9;FILE&#9;file:///home/dk994/Pulpit/Śmieci/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;selection&#9;ACTION&#9;EditorToggleColumnMode&#10;E&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;c&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/ConfigManager.java&#10;Tag&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/TagManager.java&#10;Entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;Ta&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Tag.java&#10;e&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/service/EntryService.java&#10;Embe&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Embed.java&#10;entry&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;entr&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;voter&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;hi&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/resources/hibernate.cfg.xml&#10;vo&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Voter.java&#10;ent&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Entry.java&#10;rece&#9;FILE&#9;file:///home/dk994/Pulpit/Workspace/Wykop-Miner/src/main/java/pl/poznan/put/cs/wykop/model/Receiver.java" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -624,7 +557,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="995" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AiSD2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -791,9 +724,6 @@
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Unknown" factoryName="Unknown">
       <method />
     </configuration>
     <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
@@ -1018,7 +948,8 @@
       <workItem from="1429039800553" duration="65000" />
       <workItem from="1429043700696" duration="7676000" />
       <workItem from="1429051802593" duration="79000" />
-      <workItem from="1429071220230" duration="8812000" />
+      <workItem from="1429071220230" duration="11090000" />
+      <workItem from="1429426773520" duration="4801000" />
     </task>
     <task id="LOCAL-00001" summary="Tag.java  added.">
       <created>1414006728308</created>
@@ -1188,30 +1119,25 @@
       <option name="project" value="LOCAL" />
       <updated>1425412945869</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Profile download with User  model refactor">
+      <created>1429092679588</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1429092679588</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="569496000" />
+    <option name="totallyTimeSpent" value="576575000" />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView">
     <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
     <todo-panel id="all">
       <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
@@ -1219,25 +1145,26 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18981482" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18821605" sideWeight="0.49697885" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17077176" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32569557" sideWeight="0.4939577" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46141976" sideWeight="0.5003903" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854986" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47839507" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36124796" sideWeight="0.49960968" order="6" side_tool="false" content_ui="tabs" x="0" y="24" width="1366" height="744" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3218391" sideWeight="0.49960968" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20858896" sideWeight="0.5158151" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26272577" sideWeight="0.49960968" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47839507" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2618658" sideWeight="0.50377643" order="6" side_tool="true" content_ui="tabs" x="0" y="24" width="1366" height="744" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3218391" sideWeight="0.49960968" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20090635" sideWeight="0.5166297" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2618658" sideWeight="0.49622357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20090635" sideWeight="0.48418492" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20090635" sideWeight="0.48337027" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25906345" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32512316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17296073" sideWeight="0.48919752" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35227272" sideWeight="0.5007474" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20090635" sideWeight="0.5167038" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41215107" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1249,7 +1176,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="103" y="208" width="1166" height="544" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32512316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1322,7 +1248,8 @@
     <MESSAGE value="New Branch" />
     <MESSAGE value="Wykop Branch" />
     <MESSAGE value="Link model Introduction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Link model Introduction" />
+    <MESSAGE value="Profile download with User  model refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile download with User  model refactor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1330,7 +1257,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java</url>
-          <line>93</line>
+          <line>68</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
@@ -1348,9 +1275,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3774#3782#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,9 +1283,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3774#3782#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1587,7 +1510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19725558">
           <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1599,38 +1521,33 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c0a17222/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.link">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c0a17222/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry_comment">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
           <column-attributes>
             <column name="ctid" enabled="false" />
           </column-attributes>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c0a17222/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.voter">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1639,12 +1556,9 @@
           </column-attributes>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/wykop.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09350649">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1652,7 +1566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1660,7 +1573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1676,15 +1588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Users_uniq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8993056">
-          <caret line="55835" column="3" selection-start-line="55835" selection-start-column="3" selection-end-line="55835" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1692,7 +1595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1700,7 +1602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0625">
           <caret line="1158" column="12" selection-start-line="1158" selection-start-column="12" selection-end-line="1158" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1708,7 +1609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1721,18 +1621,17 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/c0a17222/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.entry">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
           <column-attributes>
             <column name="ctid" enabled="false" />
           </column-attributes>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1744,92 +1643,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="30" />
-          <folding>
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-            <element signature="e#2044#2045#0" expanded="true" />
-            <element signature="e#2092#2093#0" expanded="true" />
-            <element signature="e#2127#2128#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2243#2244#0" expanded="true" />
-            <element signature="e#2287#2288#0" expanded="true" />
-            <element signature="e#2322#2323#0" expanded="true" />
-            <element signature="e#2355#2356#0" expanded="true" />
-            <element signature="e#2434#2435#0" expanded="true" />
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2508#2509#0" expanded="true" />
-            <element signature="e#2534#2535#0" expanded="true" />
-            <element signature="e#2597#2598#0" expanded="true" />
-            <element signature="e#2627#2628#0" expanded="true" />
-            <element signature="e#2657#2658#0" expanded="true" />
-            <element signature="e#2683#2684#0" expanded="true" />
-            <element signature="e#2746#2747#0" expanded="true" />
-            <element signature="e#2776#2777#0" expanded="true" />
-            <element signature="e#2811#2812#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#3027#3028#0" expanded="true" />
-            <element signature="e#3071#3072#0" expanded="true" />
-            <element signature="e#3105#3106#0" expanded="true" />
-            <element signature="e#3137#3138#0" expanded="true" />
-            <element signature="e#3219#3220#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3682#3683#0" expanded="true" />
-            <element signature="e#3707#3708#0" expanded="true" />
-            <element signature="e#3741#3742#0" expanded="true" />
-            <element signature="e#3769#3770#0" expanded="true" />
-            <element signature="e#3801#3802#0" expanded="true" />
-            <element signature="e#3829#3830#0" expanded="true" />
-            <element signature="e#3898#3899#0" expanded="true" />
-            <element signature="e#3932#3933#0" expanded="true" />
-            <element signature="e#3961#3962#0" expanded="true" />
-            <element signature="e#3988#3989#0" expanded="true" />
-            <element signature="e#4052#4053#0" expanded="true" />
-            <element signature="e#4084#4085#0" expanded="true" />
-            <element signature="e#4118#4119#0" expanded="true" />
-            <element signature="e#4150#4151#0" expanded="true" />
-            <element signature="e#4229#4230#0" expanded="true" />
-            <element signature="e#4271#4272#0" expanded="true" />
-            <element signature="e#4305#4306#0" expanded="true" />
-            <element signature="e#4337#4338#0" expanded="true" />
-            <element signature="e#4416#4417#0" expanded="true" />
-            <element signature="e#4458#4459#0" expanded="true" />
-            <element signature="e#4680#4681#0" expanded="true" />
-            <element signature="e#4711#4712#0" expanded="true" />
-            <element signature="e#4787#4788#0" expanded="true" />
-            <element signature="e#4827#4828#0" expanded="true" />
-            <element signature="e#4867#4868#0" expanded="true" />
-            <element signature="e#4905#4906#0" expanded="true" />
-            <element signature="e#5003#5004#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5086#5087#0" expanded="true" />
-            <element signature="e#5113#5114#0" expanded="true" />
-            <element signature="e#5178#5179#0" expanded="true" />
-            <element signature="e#5210#5211#0" expanded="true" />
-            <element signature="e#5241#5242#0" expanded="true" />
-            <element signature="e#5270#5271#0" expanded="true" />
-            <element signature="e#5340#5341#0" expanded="true" />
-            <element signature="e#5376#5377#0" expanded="true" />
-            <element signature="e#5415#5416#0" expanded="true" />
-            <element signature="e#5452#5453#0" expanded="true" />
-            <element signature="e#5547#5548#0" expanded="true" />
-            <element signature="e#5599#5600#0" expanded="true" />
-            <element signature="e#5630#5631#0" expanded="true" />
-            <element signature="e#5659#5660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/c0a17222/a31f0bd5-831b-43ea-aed6-3e71d7451275/wykop.public.users">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1838,12 +1652,9 @@
           </column-attributes>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a31f0bd5-831b-43ea-aed6-3e71d7451275/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1851,17 +1662,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14958449">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="28.89404">
+          <caret line="8165" column="7" selection-start-line="7948" selection-start-column="0" selection-end-line="7948" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/wykop.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users_uniq">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a31f0bd5-831b-43ea-aed6-3e71d7451275/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/wykop/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75064933">
+        <state vertical-scroll-proportion="0.7234042">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#3774#3782#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
