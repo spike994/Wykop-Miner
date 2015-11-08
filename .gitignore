@@ -24,10 +24,10 @@ hs_err_pid*
 .settings/
 
 # Intellij
-.idea/
-*.iml
-*.ipr
-*.iws
+#.idea/
+#*.iml
+#*.ipr
+#*.iws
 *.iwsk
 
 # Mac
